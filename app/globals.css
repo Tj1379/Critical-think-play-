@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #dff7ee, #f9efe4 45%, #f4f7f6 100%);
+  color: #0f1f1c;
+}
+
+button {
+  touch-action: manipulation;
+}
+
+@keyframes level-pop {
+  0% {
+    transform: scale(0.94);
+    opacity: 0.5;
+  }
+  60% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes badge-pop {
+  0% {
+    transform: translateY(6px);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-level-pop {
+  animation: level-pop 360ms ease-out;
+}
+
+.animate-badge-pop {
+  animation: badge-pop 320ms ease-out;
+}

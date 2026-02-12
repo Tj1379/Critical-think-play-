@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Library shelves">
+  <rect width="1200" height="700" fill="#f9efe4"/>
+  <rect x="120" y="160" width="960" height="420" rx="24" fill="#d9c2a3"/>
+  <rect x="160" y="220" width="880" height="34" fill="#7d5a46"/>
+  <rect x="160" y="300" width="880" height="34" fill="#7d5a46"/>
+  <rect x="160" y="380" width="880" height="34" fill="#7d5a46"/>
+  <rect x="160" y="460" width="880" height="34" fill="#7d5a46"/>
+  <text x="80" y="100" font-size="56" fill="#654635" font-family="Arial">Library Logic</text>
+</svg>

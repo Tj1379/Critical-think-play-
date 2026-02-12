@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Ocean route map">
+  <rect width="1200" height="700" fill="#dff2ff"/>
+  <path d="M0 440 C130 390, 260 490, 390 430 C540 360, 710 510, 900 430 C1000 390, 1120 430, 1200 410 L1200 700 L0 700 Z" fill="#79b7f2"/>
+  <circle cx="210" cy="260" r="55" fill="#ffd48a"/>
+  <circle cx="560" cy="200" r="60" fill="#ffd48a"/>
+  <circle cx="920" cy="270" r="50" fill="#ffd48a"/>
+  <path d="M210 260 L560 200 L920 270" stroke="#1f5f9c" stroke-width="5" stroke-dasharray="10 10" fill="none"/>
+  <text x="80" y="95" font-size="52" fill="#2c5f92" font-family="Arial">Ocean Route Logic</text>
+</svg>

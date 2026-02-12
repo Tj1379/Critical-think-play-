@@ -1,0 +1,120 @@
+[
+  {
+    "id": "g3_1",
+    "age_band": "10-13",
+    "type": "game",
+    "skill": "variables",
+    "difficulty": "hard",
+    "title": "Too Many Changes",
+    "content": {
+      "story": "A student tests toy car speed on a ramp.",
+      "image": "/images/stories/team-strategy.svg",
+      "method": "Variables control",
+      "evidence_note": "Changing multiple variables weakens causal conclusions.",
+      "debrief": "Which variable should be changed alone in the next test?",
+      "prompt": "A student changed ramp height AND car weight. Can they tell what caused the difference?",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "correctIndex": 1,
+      "explanation": "They changed more than one variable.",
+      "tip": "Change one variable at a time."
+    }
+  },
+  {
+    "id": "g3_2",
+    "age_band": "10-13",
+    "type": "game",
+    "skill": "data_analysis",
+    "difficulty": "hard",
+    "title": "Graph Match",
+    "content": {
+      "story": "You read a report: temperature rises, then falls.",
+      "image": "/images/stories/city-plan.svg",
+      "method": "Data representation",
+      "evidence_note": "Graph interpretation supports evidence-based reasoning.",
+      "debrief": "What part of the graph shows the turning point?",
+      "prompt": "Temperature rises, then falls. Which graph fits?",
+      "choices": [
+        "Up then down",
+        "Flat line",
+        "Down then up"
+      ],
+      "correctIndex": 0,
+      "explanation": "The graph must show increase then decrease.",
+      "tip": "Match words to patterns."
+    }
+  },
+  {
+    "id": "g3_3",
+    "age_band": "10-13",
+    "type": "game",
+    "skill": "sample_size",
+    "difficulty": "hard",
+    "title": "Is This Enough?",
+    "content": {
+      "story": "A class measured plant growth with music for one day.",
+      "image": "/images/stories/library-riddle.svg",
+      "method": "Sample size reasoning",
+      "evidence_note": "More trials are needed before generalizing conclusions.",
+      "debrief": "How many additional trials would improve confidence?",
+      "prompt": "One day of data shows plants grew faster with music. Can we conclude music always helps?",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "correctIndex": 1,
+      "explanation": "One day is not enough evidence.",
+      "tip": "More trials give stronger evidence."
+    }
+  },
+  {
+    "id": "g3_4",
+    "age_band": "10-13",
+    "type": "game",
+    "skill": "credibility",
+    "difficulty": "hard",
+    "title": "Which Source?",
+    "content": {
+      "story": "You need accurate science facts for a report.",
+      "image": "/images/stories/space-camp.svg",
+      "method": "Source credibility",
+      "evidence_note": "Source quality is central to reliable scientific reasoning.",
+      "debrief": "What signals made this source more trustworthy?",
+      "prompt": "Who is most reliable for science facts?",
+      "choices": [
+        "Science museum website",
+        "Random video",
+        "Friend's guess"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trusted institutions review information carefully.",
+      "tip": "Check who created the information."
+    }
+  },
+  {
+    "id": "g3_5",
+    "age_band": "10-13",
+    "type": "game",
+    "skill": "engineering_design",
+    "difficulty": "hard",
+    "title": "Bridge Builder",
+    "content": {
+      "story": "Your team is redesigning a weak paper bridge.",
+      "image": "/images/stories/city-plan.svg",
+      "method": "Engineering design",
+      "evidence_note": "Structural reasoning improves with constraint-based design choices.",
+      "debrief": "Why do triangles improve load distribution?",
+      "prompt": "Which change likely makes a paper bridge stronger?",
+      "choices": [
+        "Add triangle supports",
+        "Make it thinner",
+        "Make it longer without support"
+      ],
+      "correctIndex": 0,
+      "explanation": "Triangles distribute weight and add strength.",
+      "tip": "Think about structure and support."
+    }
+  }
+]

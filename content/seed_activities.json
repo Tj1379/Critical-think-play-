@@ -1,0 +1,2484 @@
+[
+  {
+    "id": "10_13_evidence_logic_1",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "pattern",
+    "difficulty": "easy",
+    "title": "Chess Transfer Check 1",
+    "content": {
+      "story": "A middle school team compares two candidate chess moves and must justify the stronger option with evidence.",
+      "image": "/images/stories/park-path.svg",
+      "method": "Chess analysis with transfer caution",
+      "evidence_note": "Research reports modest average transfer effects from chess instruction; strongest gains come with explicit reasoning discussion and reflection.",
+      "debrief": "How would you explain this move to someone who disagrees?",
+      "prompt": "Which move is better supported by position, safety, and long-term plan?",
+      "choices": [
+        "Improve king safety and increase piece activity",
+        "Chase one pawn while ignoring check threats",
+        "Force a flashy move with no backup",
+        "Repeat moves and lose tempo without reason"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "10_13_evidence_logic_10",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "sequencing",
+    "difficulty": "hard",
+    "title": "Evidence Quest 10",
+    "content": {
+      "story": "Students evaluate online claims and strategy options before making a group recommendation.",
+      "image": "/images/stories/kitchen-plan.svg",
+      "method": "Problem based learning",
+      "evidence_note": "PBL often improves critical thinking when inquiry steps are explicit.",
+      "debrief": "What would you check next before sharing this conclusion?",
+      "prompt": "Which option best meets constraints and evidence standards?",
+      "choices": [
+        "Define question gather evidence then decide",
+        "Decide first gather evidence later",
+        "Share conclusion then read sources",
+        "Skip evidence and repeat claim"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "10_13_evidence_logic_11",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "elimination",
+    "difficulty": "hard",
+    "title": "Evidence Quest 11",
+    "content": {
+      "story": "Students evaluate online claims and strategy options before making a group recommendation.",
+      "image": "/images/stories/community-help.svg",
+      "method": "Bad News inoculation",
+      "evidence_note": "Prebunking game play can improve detection of manipulation techniques.",
+      "debrief": "What would you check next before sharing this conclusion?",
+      "prompt": "Which option best meets constraints and evidence standards?",
+      "choices": [
+        "Reject options that violate any requirement",
+        "Keep options that violate one requirement",
+        "Pick option with longest paragraph",
+        "Pick option with most adjectives"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "10_13_evidence_logic_12",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "hard",
+    "title": "Evidence Quest 12",
+    "content": {
+      "story": "Students evaluate online claims and strategy options before making a group recommendation.",
+      "image": "/images/stories/park-path.svg",
+      "method": "Cranky Uncle fallacy spotting",
+      "evidence_note": "Learning misinformation techniques helps identify weak claims.",
+      "debrief": "What would you check next before sharing this conclusion?",
+      "prompt": "Which option best meets constraints and evidence standards?",
+      "choices": [
+        "Open a second tab to verify the source",
+        "Read only headline and decide",
+        "Trust account because it is viral",
+        "Trust claim because image looks real"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "10_13_evidence_logic_2",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "easy",
+    "title": "Evidence Quest 2",
+    "content": {
+      "story": "Students evaluate online claims and strategy options before making a group recommendation.",
+      "image": "/images/stories/library-riddle.svg",
+      "method": "Problem based learning",
+      "evidence_note": "PBL often improves critical thinking when inquiry steps are explicit.",
+      "debrief": "What would you check next before sharing this conclusion?",
+      "prompt": "Which option best meets constraints and evidence standards?",
+      "choices": [
+        "Pilot training lowered incident counts in matched teams",
+        "Lower incident counts created earlier training records",
+        "Survey mood caused hardware failure rates",
+        "Poster color changed traffic patterns"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "10_13_evidence_logic_3",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "easy",
+    "title": "Evidence Quest 3",
+    "content": {
+      "story": "Students evaluate online claims and strategy options before making a group recommendation.",
+      "image": "/images/stories/market-math.svg",
+      "method": "Bad News inoculation",
+      "evidence_note": "Prebunking game play can improve detection of manipulation techniques.",
+      "debrief": "What would you check next before sharing this conclusion?",
+      "prompt": "Which option best meets constraints and evidence standards?",
+      "choices": [
+        "Use two independent sources that agree",
+        "Use one anonymous rumor only",
+        "Use no source and strong tone",
+        "Use friend message without context"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "10_13_evidence_logic_4",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "sequencing",
+    "difficulty": "easy",
+    "title": "Evidence Quest 4",
+    "content": {
+      "story": "Students evaluate online claims and strategy options before making a group recommendation.",
+      "image": "/images/stories/science-lab.svg",
+      "method": "Cranky Uncle fallacy spotting",
+      "evidence_note": "Learning misinformation techniques helps identify weak claims.",
+      "debrief": "What would you check next before sharing this conclusion?",
+      "prompt": "Which option best meets constraints and evidence standards?",
+      "choices": [
+        "Define question gather evidence then decide",
+        "Decide first gather evidence later",
+        "Share conclusion then read sources",
+        "Skip evidence and repeat claim"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "10_13_evidence_logic_5",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "elimination",
+    "difficulty": "medium",
+    "title": "Evidence Quest 5",
+    "content": {
+      "story": "Students evaluate online claims and strategy options before making a group recommendation.",
+      "image": "/images/stories/team-strategy.svg",
+      "method": "Civic Online Reasoning",
+      "evidence_note": "Source evaluation lessons improve online reasoning versus typical instruction.",
+      "debrief": "What would you check next before sharing this conclusion?",
+      "prompt": "Which option best meets constraints and evidence standards?",
+      "choices": [
+        "Reject options that violate any requirement",
+        "Keep options that violate one requirement",
+        "Pick option with longest paragraph",
+        "Pick option with most adjectives"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "10_13_evidence_logic_6",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "medium",
+    "title": "Evidence Quest 6",
+    "content": {
+      "story": "Students evaluate online claims and strategy options before making a group recommendation.",
+      "image": "/images/stories/city-plan.svg",
+      "method": "Problem based learning",
+      "evidence_note": "PBL often improves critical thinking when inquiry steps are explicit.",
+      "debrief": "What would you check next before sharing this conclusion?",
+      "prompt": "Which option best meets constraints and evidence standards?",
+      "choices": [
+        "Open a second tab to verify the source",
+        "Read only headline and decide",
+        "Trust account because it is viral",
+        "Trust claim because image looks real"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "10_13_evidence_logic_7",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "pattern",
+    "difficulty": "medium",
+    "title": "Evidence Quest 7",
+    "content": {
+      "story": "Students evaluate online claims and strategy options before making a group recommendation.",
+      "image": "/images/stories/forest-trail.svg",
+      "method": "Bad News inoculation",
+      "evidence_note": "Prebunking game play can improve detection of manipulation techniques.",
+      "debrief": "What would you check next before sharing this conclusion?",
+      "prompt": "Which option best meets constraints and evidence standards?",
+      "choices": [
+        "A B C A B C next A",
+        "A B C A B C next D",
+        "A B C A B C next Z",
+        "A B C A B C next C and Z"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "10_13_evidence_logic_8",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "medium",
+    "title": "Evidence Quest 8",
+    "content": {
+      "story": "Students evaluate online claims and strategy options before making a group recommendation.",
+      "image": "/images/stories/ocean-route.svg",
+      "method": "Cranky Uncle fallacy spotting",
+      "evidence_note": "Learning misinformation techniques helps identify weak claims.",
+      "debrief": "What would you check next before sharing this conclusion?",
+      "prompt": "Which option best meets constraints and evidence standards?",
+      "choices": [
+        "Pilot training lowered incident counts in matched teams",
+        "Lower incident counts created earlier training records",
+        "Survey mood caused hardware failure rates",
+        "Poster color changed traffic patterns"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "10_13_evidence_logic_9",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "hard",
+    "title": "Evidence Quest 9",
+    "content": {
+      "story": "Students evaluate online claims and strategy options before making a group recommendation.",
+      "image": "/images/stories/space-camp.svg",
+      "method": "Civic Online Reasoning",
+      "evidence_note": "Source evaluation lessons improve online reasoning versus typical instruction.",
+      "debrief": "What would you check next before sharing this conclusion?",
+      "prompt": "Which option best meets constraints and evidence standards?",
+      "choices": [
+        "Use two independent sources that agree",
+        "Use one anonymous rumor only",
+        "Use no source and strong tone",
+        "Use friend message without context"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "14_18_evidence_logic_1",
+    "age_band": "14-18",
+    "type": "logic_game",
+    "skill": "pattern",
+    "difficulty": "easy",
+    "title": "Strategic Tradeoff Board 1",
+    "content": {
+      "story": "A high school strategy team evaluates a chess-like scenario with short-term gain versus long-term positional strength.",
+      "image": "/images/stories/park-path.svg",
+      "method": "Strategic game reasoning",
+      "evidence_note": "Game based strategy tasks can build analysis habits; transfer is stronger when paired with explicit argument and evidence reflection.",
+      "debrief": "What tradeoff did you accept, and what evidence made it reasonable?",
+      "prompt": "Which option is the most defensible strategic tradeoff?",
+      "choices": [
+        "Accept a small material loss for lasting positional control",
+        "Grab material now while opening your king to attack",
+        "Ignore opponent threats to keep a simple plan",
+        "Choose the move that looks aggressive without calculation"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "14_18_evidence_logic_10",
+    "age_band": "14-18",
+    "type": "logic_game",
+    "skill": "sequencing",
+    "difficulty": "hard",
+    "title": "Strategic Reasoning Lab 10",
+    "content": {
+      "story": "A student team prepares a policy recommendation with limited budget mixed evidence and tradeoffs.",
+      "image": "/images/stories/kitchen-plan.svg",
+      "method": "Civic Online Reasoning",
+      "evidence_note": "Explicit source checks improve judgments about online credibility.",
+      "debrief": "Which tradeoff did you accept and why was that tradeoff reasonable?",
+      "prompt": "Which decision is most defensible under the stated constraints?",
+      "choices": [
+        "State claim present evidence address rebuttal",
+        "State claim ignore rebuttal and end",
+        "Address rebuttal before claim",
+        "End before evidence appears"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "14_18_evidence_logic_11",
+    "age_band": "14-18",
+    "type": "logic_game",
+    "skill": "elimination",
+    "difficulty": "hard",
+    "title": "Strategic Reasoning Lab 11",
+    "content": {
+      "story": "A student team prepares a policy recommendation with limited budget mixed evidence and tradeoffs.",
+      "image": "/images/stories/community-help.svg",
+      "method": "Problem based learning",
+      "evidence_note": "PBL can strengthen reasoning when teams justify steps and evidence.",
+      "debrief": "Which tradeoff did you accept and why was that tradeoff reasonable?",
+      "prompt": "Which decision is most defensible under the stated constraints?",
+      "choices": [
+        "Discard options violating budget or compliance",
+        "Keep noncompliant option for creativity",
+        "Pick bold sounding option",
+        "Pick fastest option regardless of risk"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "14_18_evidence_logic_12",
+    "age_band": "14-18",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "hard",
+    "title": "Strategic Reasoning Lab 12",
+    "content": {
+      "story": "A student team prepares a policy recommendation with limited budget mixed evidence and tradeoffs.",
+      "image": "/images/stories/park-path.svg",
+      "method": "Inoculation game transfer",
+      "evidence_note": "Misinformation prebunking can increase resistance to manipulation techniques.",
+      "debrief": "Which tradeoff did you accept and why was that tradeoff reasonable?",
+      "prompt": "Which decision is most defensible under the stated constraints?",
+      "choices": [
+        "Check author funding date and corroboration",
+        "Share immediately because it confirms belief",
+        "Trust infographic with no source",
+        "Trust repost count as validation"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "14_18_evidence_logic_2",
+    "age_band": "14-18",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "easy",
+    "title": "Strategic Reasoning Lab 2",
+    "content": {
+      "story": "A student team prepares a policy recommendation with limited budget mixed evidence and tradeoffs.",
+      "image": "/images/stories/library-riddle.svg",
+      "method": "Civic Online Reasoning",
+      "evidence_note": "Explicit source checks improve judgments about online credibility.",
+      "debrief": "Which tradeoff did you accept and why was that tradeoff reasonable?",
+      "prompt": "Which decision is most defensible under the stated constraints?",
+      "choices": [
+        "Staggered rollout reduced queue length by 20 percent",
+        "Queue drop in March caused rollout in January",
+        "Slogan design caused hardware reliability",
+        "Color palette caused staffing ratio shifts"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "14_18_evidence_logic_3",
+    "age_band": "14-18",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "easy",
+    "title": "Strategic Reasoning Lab 3",
+    "content": {
+      "story": "A student team prepares a policy recommendation with limited budget mixed evidence and tradeoffs.",
+      "image": "/images/stories/market-math.svg",
+      "method": "Problem based learning",
+      "evidence_note": "PBL can strengthen reasoning when teams justify steps and evidence.",
+      "debrief": "Which tradeoff did you accept and why was that tradeoff reasonable?",
+      "prompt": "Which decision is most defensible under the stated constraints?",
+      "choices": [
+        "Use controlled comparison plus local baseline",
+        "Use one unverified thread",
+        "Use popularity as proof",
+        "Use no citation with high confidence"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "14_18_evidence_logic_4",
+    "age_band": "14-18",
+    "type": "logic_game",
+    "skill": "sequencing",
+    "difficulty": "easy",
+    "title": "Strategic Reasoning Lab 4",
+    "content": {
+      "story": "A student team prepares a policy recommendation with limited budget mixed evidence and tradeoffs.",
+      "image": "/images/stories/science-lab.svg",
+      "method": "Inoculation game transfer",
+      "evidence_note": "Misinformation prebunking can increase resistance to manipulation techniques.",
+      "debrief": "Which tradeoff did you accept and why was that tradeoff reasonable?",
+      "prompt": "Which decision is most defensible under the stated constraints?",
+      "choices": [
+        "State claim present evidence address rebuttal",
+        "State claim ignore rebuttal and end",
+        "Address rebuttal before claim",
+        "End before evidence appears"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "14_18_evidence_logic_5",
+    "age_band": "14-18",
+    "type": "logic_game",
+    "skill": "elimination",
+    "difficulty": "medium",
+    "title": "Strategic Reasoning Lab 5",
+    "content": {
+      "story": "A student team prepares a policy recommendation with limited budget mixed evidence and tradeoffs.",
+      "image": "/images/stories/team-strategy.svg",
+      "method": "Structured debate",
+      "evidence_note": "Debate with evidence rubrics can improve argument quality and critical analysis.",
+      "debrief": "Which tradeoff did you accept and why was that tradeoff reasonable?",
+      "prompt": "Which decision is most defensible under the stated constraints?",
+      "choices": [
+        "Discard options violating budget or compliance",
+        "Keep noncompliant option for creativity",
+        "Pick bold sounding option",
+        "Pick fastest option regardless of risk"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "14_18_evidence_logic_6",
+    "age_band": "14-18",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "medium",
+    "title": "Strategic Reasoning Lab 6",
+    "content": {
+      "story": "A student team prepares a policy recommendation with limited budget mixed evidence and tradeoffs.",
+      "image": "/images/stories/city-plan.svg",
+      "method": "Civic Online Reasoning",
+      "evidence_note": "Explicit source checks improve judgments about online credibility.",
+      "debrief": "Which tradeoff did you accept and why was that tradeoff reasonable?",
+      "prompt": "Which decision is most defensible under the stated constraints?",
+      "choices": [
+        "Check author funding date and corroboration",
+        "Share immediately because it confirms belief",
+        "Trust infographic with no source",
+        "Trust repost count as validation"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "14_18_evidence_logic_7",
+    "age_band": "14-18",
+    "type": "logic_game",
+    "skill": "pattern",
+    "difficulty": "medium",
+    "title": "Strategic Reasoning Lab 7",
+    "content": {
+      "story": "A student team prepares a policy recommendation with limited budget mixed evidence and tradeoffs.",
+      "image": "/images/stories/forest-trail.svg",
+      "method": "Problem based learning",
+      "evidence_note": "PBL can strengthen reasoning when teams justify steps and evidence.",
+      "debrief": "Which tradeoff did you accept and why was that tradeoff reasonable?",
+      "prompt": "Which decision is most defensible under the stated constraints?",
+      "choices": [
+        "Metric rises by three each cycle",
+        "Metric rises then resets with no mechanism",
+        "Metric both rises and falls identically",
+        "Metric has no pattern but exact certainty"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "14_18_evidence_logic_8",
+    "age_band": "14-18",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "medium",
+    "title": "Strategic Reasoning Lab 8",
+    "content": {
+      "story": "A student team prepares a policy recommendation with limited budget mixed evidence and tradeoffs.",
+      "image": "/images/stories/ocean-route.svg",
+      "method": "Inoculation game transfer",
+      "evidence_note": "Misinformation prebunking can increase resistance to manipulation techniques.",
+      "debrief": "Which tradeoff did you accept and why was that tradeoff reasonable?",
+      "prompt": "Which decision is most defensible under the stated constraints?",
+      "choices": [
+        "Staggered rollout reduced queue length by 20 percent",
+        "Queue drop in March caused rollout in January",
+        "Slogan design caused hardware reliability",
+        "Color palette caused staffing ratio shifts"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "14_18_evidence_logic_9",
+    "age_band": "14-18",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "hard",
+    "title": "Strategic Reasoning Lab 9",
+    "content": {
+      "story": "A student team prepares a policy recommendation with limited budget mixed evidence and tradeoffs.",
+      "image": "/images/stories/space-camp.svg",
+      "method": "Structured debate",
+      "evidence_note": "Debate with evidence rubrics can improve argument quality and critical analysis.",
+      "debrief": "Which tradeoff did you accept and why was that tradeoff reasonable?",
+      "prompt": "Which decision is most defensible under the stated constraints?",
+      "choices": [
+        "Use controlled comparison plus local baseline",
+        "Use one unverified thread",
+        "Use popularity as proof",
+        "Use no citation with high confidence"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "4_6_evidence_logic_1",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "pattern",
+    "difficulty": "easy",
+    "title": "Little Thinkers Story 1",
+    "content": {
+      "story": "Two friends work together to solve a small problem in their neighborhood.",
+      "image": "/images/stories/park-path.svg",
+      "method": "P4C mini inquiry",
+      "evidence_note": "Discussion based inquiry supports early reasoning growth in children.",
+      "debrief": "What pattern did you notice first?",
+      "prompt": "Pattern: red, blue, red, blue. What color comes next?",
+      "choices": [
+        "Red",
+        "Blue",
+        "Green",
+        "Yellow"
+      ],
+      "correctIndex": 0,
+      "explanation": "The colors alternate red, blue, red, blue, so red comes next.",
+      "tip": "Look for the repeating part of the pattern."
+    }
+  },
+  {
+    "id": "4_6_evidence_logic_10",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "sequencing",
+    "difficulty": "hard",
+    "title": "Little Thinkers Story 10",
+    "content": {
+      "story": "Two friends work together to solve a small problem in their neighborhood.",
+      "image": "/images/stories/kitchen-plan.svg",
+      "method": "P4C mini inquiry",
+      "evidence_note": "Discussion based inquiry supports early reasoning growth in children.",
+      "debrief": "Can you explain why your answer fits the clue better than one other choice?",
+      "prompt": "Which choice is the best thinking move?",
+      "choices": [
+        "Read clue then choose path",
+        "Choose path then read clue",
+        "Celebrate before solving",
+        "Skip clue and start over"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "4_6_evidence_logic_11",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "elimination",
+    "difficulty": "hard",
+    "title": "Little Thinkers Story 11",
+    "content": {
+      "story": "Two friends work together to solve a small problem in their neighborhood.",
+      "image": "/images/stories/community-help.svg",
+      "method": "P4C mini inquiry",
+      "evidence_note": "Discussion based inquiry supports early reasoning growth in children.",
+      "debrief": "Can you explain why your answer fits the clue better than one other choice?",
+      "prompt": "Which choice is the best thinking move?",
+      "choices": [
+        "Cross out impossible answers first",
+        "Keep every answer no matter what",
+        "Choose first answer only",
+        "Change answer every second"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "4_6_evidence_logic_12",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "hard",
+    "title": "Little Thinkers Story 12",
+    "content": {
+      "story": "Two friends work together to solve a small problem in their neighborhood.",
+      "image": "/images/stories/park-path.svg",
+      "method": "P4C mini inquiry",
+      "evidence_note": "Discussion based inquiry supports early reasoning growth in children.",
+      "debrief": "Can you explain why your answer fits the clue better than one other choice?",
+      "prompt": "Which choice is the best thinking move?",
+      "choices": [
+        "Ask the teacher card and picture clue",
+        "Believe a random shout only",
+        "Use no clue and just spin",
+        "Copy what a cartoon cloud says"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "4_6_evidence_logic_2",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "easy",
+    "title": "Little Thinkers Story 2",
+    "content": {
+      "story": "Two friends work together to solve a small problem in their neighborhood.",
+      "image": "/images/stories/library-riddle.svg",
+      "method": "P4C mini inquiry",
+      "evidence_note": "Discussion based inquiry supports early reasoning growth in children.",
+      "debrief": "Can you explain why your answer fits the clue better than one other choice?",
+      "prompt": "Which choice is the best thinking move?",
+      "choices": [
+        "Rain starts so we use an umbrella",
+        "Rain starts so we wear sunglasses at night",
+        "Rain starts so we hide the map",
+        "Rain starts so we stop all games forever"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "4_6_evidence_logic_3",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "easy",
+    "title": "Little Thinkers Story 3",
+    "content": {
+      "story": "Two friends work together to solve a small problem in their neighborhood.",
+      "image": "/images/stories/market-math.svg",
+      "method": "P4C mini inquiry",
+      "evidence_note": "Discussion based inquiry supports early reasoning growth in children.",
+      "debrief": "Can you explain why your answer fits the clue better than one other choice?",
+      "prompt": "Which choice is the best thinking move?",
+      "choices": [
+        "Check the muddy footprints near the door",
+        "Pick the guess that sounds loud",
+        "Pick your favorite color",
+        "Pick the longest sentence"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "4_6_evidence_logic_4",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "sequencing",
+    "difficulty": "easy",
+    "title": "Little Thinkers Story 4",
+    "content": {
+      "story": "Two friends work together to solve a small problem in their neighborhood.",
+      "image": "/images/stories/science-lab.svg",
+      "method": "P4C mini inquiry",
+      "evidence_note": "Discussion based inquiry supports early reasoning growth in children.",
+      "debrief": "Can you explain why your answer fits the clue better than one other choice?",
+      "prompt": "Which choice is the best thinking move?",
+      "choices": [
+        "Read clue then choose path",
+        "Choose path then read clue",
+        "Celebrate before solving",
+        "Skip clue and start over"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "4_6_evidence_logic_5",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "elimination",
+    "difficulty": "medium",
+    "title": "Little Thinkers Story 5",
+    "content": {
+      "story": "Two friends work together to solve a small problem in their neighborhood.",
+      "image": "/images/stories/team-strategy.svg",
+      "method": "P4C mini inquiry",
+      "evidence_note": "Discussion based inquiry supports early reasoning growth in children.",
+      "debrief": "Can you explain why your answer fits the clue better than one other choice?",
+      "prompt": "Which choice is the best thinking move?",
+      "choices": [
+        "Cross out impossible answers first",
+        "Keep every answer no matter what",
+        "Choose first answer only",
+        "Change answer every second"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "4_6_evidence_logic_6",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "medium",
+    "title": "Little Thinkers Story 6",
+    "content": {
+      "story": "Two friends work together to solve a small problem in their neighborhood.",
+      "image": "/images/stories/city-plan.svg",
+      "method": "P4C mini inquiry",
+      "evidence_note": "Discussion based inquiry supports early reasoning growth in children.",
+      "debrief": "Can you explain why your answer fits the clue better than one other choice?",
+      "prompt": "Which choice is the best thinking move?",
+      "choices": [
+        "Ask the teacher card and picture clue",
+        "Believe a random shout only",
+        "Use no clue and just spin",
+        "Copy what a cartoon cloud says"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "4_6_evidence_logic_7",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "pattern",
+    "difficulty": "medium",
+    "title": "Little Thinkers Story 7",
+    "content": {
+      "story": "Two friends work together to solve a small problem in their neighborhood.",
+      "image": "/images/stories/forest-trail.svg",
+      "method": "P4C mini inquiry",
+      "evidence_note": "Discussion based inquiry supports early reasoning growth in children.",
+      "debrief": "Which part of the pattern repeats?",
+      "prompt": "Pattern: circle, square, circle, square. What comes next?",
+      "choices": [
+        "Circle",
+        "Triangle",
+        "Star",
+        "Heart"
+      ],
+      "correctIndex": 0,
+      "explanation": "The pattern alternates circle and square, so circle comes next.",
+      "tip": "Say the pattern out loud to find the next shape."
+    }
+  },
+  {
+    "id": "4_6_evidence_logic_8",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "medium",
+    "title": "Little Thinkers Story 8",
+    "content": {
+      "story": "Two friends work together to solve a small problem in their neighborhood.",
+      "image": "/images/stories/ocean-route.svg",
+      "method": "P4C mini inquiry",
+      "evidence_note": "Discussion based inquiry supports early reasoning growth in children.",
+      "debrief": "Can you explain why your answer fits the clue better than one other choice?",
+      "prompt": "Which choice is the best thinking move?",
+      "choices": [
+        "Rain starts so we use an umbrella",
+        "Rain starts so we wear sunglasses at night",
+        "Rain starts so we hide the map",
+        "Rain starts so we stop all games forever"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "4_6_evidence_logic_9",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "hard",
+    "title": "Little Thinkers Story 9",
+    "content": {
+      "story": "Two friends work together to solve a small problem in their neighborhood.",
+      "image": "/images/stories/space-camp.svg",
+      "method": "P4C mini inquiry",
+      "evidence_note": "Discussion based inquiry supports early reasoning growth in children.",
+      "debrief": "Can you explain why your answer fits the clue better than one other choice?",
+      "prompt": "Which choice is the best thinking move?",
+      "choices": [
+        "Check the muddy footprints near the door",
+        "Pick the guess that sounds loud",
+        "Pick your favorite color",
+        "Pick the longest sentence"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "7_9_evidence_logic_1",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "pattern",
+    "difficulty": "easy",
+    "title": "Chess Clue Mission 1",
+    "content": {
+      "story": "A school chess club must pick the next best move using board clues and simple strategy.",
+      "image": "/images/stories/park-path.svg",
+      "method": "Chess strategy puzzle",
+      "evidence_note": "Chess instruction can support reasoning gains, but transfer to other outcomes is usually modest and depends on implementation.",
+      "debrief": "Which board clue mattered most for your move choice?",
+      "prompt": "Which move best follows the board pattern and keeps your piece safe?",
+      "choices": [
+        "Develop a new piece and protect the center",
+        "Move the same piece three times with no plan",
+        "Ignore threats and push a random pawn",
+        "Trade your queen for a pawn immediately"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "7_9_evidence_logic_10",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "sequencing",
+    "difficulty": "hard",
+    "title": "Junior Logic Mission 10",
+    "content": {
+      "story": "A class team solves a mystery using clues from the library playground and map board.",
+      "image": "/images/stories/kitchen-plan.svg",
+      "method": "iCivics style decision game",
+      "evidence_note": "Civics game plus debrief supports evidence use and decision reasoning.",
+      "debrief": "Which clue was strongest and which clue was weak?",
+      "prompt": "Which answer is most supported by the clues?",
+      "choices": [
+        "Collect clues then compare then decide",
+        "Decide then collect clues",
+        "Skip clues and announce answer",
+        "Pick answer then ask question"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "7_9_evidence_logic_11",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "elimination",
+    "difficulty": "hard",
+    "title": "Junior Logic Mission 11",
+    "content": {
+      "story": "A class team solves a mystery using clues from the library playground and map board.",
+      "image": "/images/stories/community-help.svg",
+      "method": "iCivics style decision game",
+      "evidence_note": "Civics game plus debrief supports evidence use and decision reasoning.",
+      "debrief": "Which clue was strongest and which clue was weak?",
+      "prompt": "Which answer is most supported by the clues?",
+      "choices": [
+        "Remove any option that breaks a clue",
+        "Keep options even if clues conflict",
+        "Pick the longest wording",
+        "Pick whichever has biggest number"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "7_9_evidence_logic_12",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "hard",
+    "title": "Junior Logic Mission 12",
+    "content": {
+      "story": "A class team solves a mystery using clues from the library playground and map board.",
+      "image": "/images/stories/park-path.svg",
+      "method": "iCivics style decision game",
+      "evidence_note": "Civics game plus debrief supports evidence use and decision reasoning.",
+      "debrief": "Which clue was strongest and which clue was weak?",
+      "prompt": "Which answer is most supported by the clues?",
+      "choices": [
+        "Trust source with named author and date",
+        "Trust source with no author and no date",
+        "Trust source that says trust me",
+        "Trust source because it has bold text"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "7_9_evidence_logic_2",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "easy",
+    "title": "Junior Logic Mission 2",
+    "content": {
+      "story": "A class team solves a mystery using clues from the library playground and map board.",
+      "image": "/images/stories/library-riddle.svg",
+      "method": "P4C classroom dialogue",
+      "evidence_note": "Structured dialogue with justification improves reasoning and argument quality.",
+      "debrief": "Which clue was strongest and which clue was weak?",
+      "prompt": "Which answer is most supported by the clues?",
+      "choices": [
+        "Water spilled so the floor got slippery",
+        "Floor got slippery so water disappeared",
+        "Clock rang so road signs moved",
+        "Shoes tied so weather changed"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "7_9_evidence_logic_3",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "easy",
+    "title": "Junior Logic Mission 3",
+    "content": {
+      "story": "A class team solves a mystery using clues from the library playground and map board.",
+      "image": "/images/stories/market-math.svg",
+      "method": "P4C classroom dialogue",
+      "evidence_note": "Structured dialogue with justification improves reasoning and argument quality.",
+      "debrief": "Which clue was strongest and which clue was weak?",
+      "prompt": "Which answer is most supported by the clues?",
+      "choices": [
+        "Use the timestamped photo and checklist",
+        "Use the most confident guess",
+        "Use the loudest class vote only",
+        "Use no evidence and move fast"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "7_9_evidence_logic_4",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "sequencing",
+    "difficulty": "easy",
+    "title": "Junior Logic Mission 4",
+    "content": {
+      "story": "A class team solves a mystery using clues from the library playground and map board.",
+      "image": "/images/stories/science-lab.svg",
+      "method": "P4C classroom dialogue",
+      "evidence_note": "Structured dialogue with justification improves reasoning and argument quality.",
+      "debrief": "Which clue was strongest and which clue was weak?",
+      "prompt": "Which answer is most supported by the clues?",
+      "choices": [
+        "Collect clues then compare then decide",
+        "Decide then collect clues",
+        "Skip clues and announce answer",
+        "Pick answer then ask question"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "7_9_evidence_logic_5",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "elimination",
+    "difficulty": "medium",
+    "title": "Junior Logic Mission 5",
+    "content": {
+      "story": "A class team solves a mystery using clues from the library playground and map board.",
+      "image": "/images/stories/team-strategy.svg",
+      "method": "P4C classroom dialogue",
+      "evidence_note": "Structured dialogue with justification improves reasoning and argument quality.",
+      "debrief": "Which clue was strongest and which clue was weak?",
+      "prompt": "Which answer is most supported by the clues?",
+      "choices": [
+        "Remove any option that breaks a clue",
+        "Keep options even if clues conflict",
+        "Pick the longest wording",
+        "Pick whichever has biggest number"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "7_9_evidence_logic_6",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "medium",
+    "title": "Junior Logic Mission 6",
+    "content": {
+      "story": "A class team solves a mystery using clues from the library playground and map board.",
+      "image": "/images/stories/city-plan.svg",
+      "method": "P4C classroom dialogue",
+      "evidence_note": "Structured dialogue with justification improves reasoning and argument quality.",
+      "debrief": "Which clue was strongest and which clue was weak?",
+      "prompt": "Which answer is most supported by the clues?",
+      "choices": [
+        "Trust source with named author and date",
+        "Trust source with no author and no date",
+        "Trust source that says trust me",
+        "Trust source because it has bold text"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "7_9_evidence_logic_7",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "pattern",
+    "difficulty": "medium",
+    "title": "Junior Logic Mission 7",
+    "content": {
+      "story": "A class team solves a mystery using clues from the library playground and map board.",
+      "image": "/images/stories/forest-trail.svg",
+      "method": "iCivics style decision game",
+      "evidence_note": "Civics game plus debrief supports evidence use and decision reasoning.",
+      "debrief": "Which clue was strongest and which clue was weak?",
+      "prompt": "Which answer is most supported by the clues?",
+      "choices": [
+        "2 4 6 8 next is 10",
+        "2 4 6 8 next is 7",
+        "2 4 6 8 next is 1",
+        "2 4 6 8 next is 12 and 2"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "7_9_evidence_logic_8",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "medium",
+    "title": "Junior Logic Mission 8",
+    "content": {
+      "story": "A class team solves a mystery using clues from the library playground and map board.",
+      "image": "/images/stories/ocean-route.svg",
+      "method": "iCivics style decision game",
+      "evidence_note": "Civics game plus debrief supports evidence use and decision reasoning.",
+      "debrief": "Which clue was strongest and which clue was weak?",
+      "prompt": "Which answer is most supported by the clues?",
+      "choices": [
+        "Water spilled so the floor got slippery",
+        "Floor got slippery so water disappeared",
+        "Clock rang so road signs moved",
+        "Shoes tied so weather changed"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "7_9_evidence_logic_9",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "hard",
+    "title": "Junior Logic Mission 9",
+    "content": {
+      "story": "A class team solves a mystery using clues from the library playground and map board.",
+      "image": "/images/stories/space-camp.svg",
+      "method": "iCivics style decision game",
+      "evidence_note": "Civics game plus debrief supports evidence use and decision reasoning.",
+      "debrief": "Which clue was strongest and which clue was weak?",
+      "prompt": "Which answer is most supported by the clues?",
+      "choices": [
+        "Use the timestamped photo and checklist",
+        "Use the most confident guess",
+        "Use the loudest class vote only",
+        "Use no evidence and move fast"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "adult_evidence_logic_1",
+    "age_band": "adult",
+    "type": "logic_game",
+    "skill": "pattern",
+    "difficulty": "easy",
+    "title": "Applied Reasoning Brief 1",
+    "content": {
+      "story": "An adult learner reviews planning risk and credibility questions before a practical decision.",
+      "image": "/images/stories/park-path.svg",
+      "method": "Argument mapping",
+      "evidence_note": "Argument mapping with explicit claim reason objection links improves critical thinking.",
+      "debrief": "What assumption could fail and what evidence would test it quickly?",
+      "prompt": "Which option is best supported by evidence and constraints?",
+      "choices": [
+        "Demand follows stable seasonal cycle",
+        "Demand has no pattern but guaranteed forecast",
+        "Demand goes both up and down the same week from one cause",
+        "Demand ignores all observed data points"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "adult_evidence_logic_10",
+    "age_band": "adult",
+    "type": "logic_game",
+    "skill": "sequencing",
+    "difficulty": "hard",
+    "title": "Applied Reasoning Brief 10",
+    "content": {
+      "story": "An adult learner reviews planning risk and credibility questions before a practical decision.",
+      "image": "/images/stories/kitchen-plan.svg",
+      "method": "Lateral reading",
+      "evidence_note": "Fact checker style lateral reading instruction improves source evaluation.",
+      "debrief": "What assumption could fail and what evidence would test it quickly?",
+      "prompt": "Which option is best supported by evidence and constraints?",
+      "choices": [
+        "Define scope map argument then test",
+        "Scale solution before defining scope",
+        "Skip test and publish",
+        "Decide then seek reasons"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "adult_evidence_logic_11",
+    "age_band": "adult",
+    "type": "logic_game",
+    "skill": "elimination",
+    "difficulty": "hard",
+    "title": "Applied Reasoning Brief 11",
+    "content": {
+      "story": "An adult learner reviews planning risk and credibility questions before a practical decision.",
+      "image": "/images/stories/community-help.svg",
+      "method": "Prebunking game strategy",
+      "evidence_note": "Inoculation style tasks improve resistance to manipulation cues.",
+      "debrief": "What assumption could fail and what evidence would test it quickly?",
+      "prompt": "Which option is best supported by evidence and constraints?",
+      "choices": [
+        "Remove options that break legal or budget limits",
+        "Keep illegal option because it is simple",
+        "Choose option with strongest wording",
+        "Choose option with lowest effort only"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "adult_evidence_logic_12",
+    "age_band": "adult",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "hard",
+    "title": "Applied Reasoning Brief 12",
+    "content": {
+      "story": "An adult learner reviews planning risk and credibility questions before a practical decision.",
+      "image": "/images/stories/park-path.svg",
+      "method": "Evidence first decision protocol",
+      "evidence_note": "Reasoning improves when assumptions and evidence are separated before action.",
+      "debrief": "What assumption could fail and what evidence would test it quickly?",
+      "prompt": "Which option is best supported by evidence and constraints?",
+      "choices": [
+        "Open external verification before trusting claim",
+        "Trust source because it matches prior view",
+        "Trust source with hidden author",
+        "Trust source because many likes"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "adult_evidence_logic_2",
+    "age_band": "adult",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "easy",
+    "title": "Applied Reasoning Brief 2",
+    "content": {
+      "story": "An adult learner reviews planning risk and credibility questions before a practical decision.",
+      "image": "/images/stories/library-riddle.svg",
+      "method": "Lateral reading",
+      "evidence_note": "Fact checker style lateral reading instruction improves source evaluation.",
+      "debrief": "What assumption could fail and what evidence would test it quickly?",
+      "prompt": "Which option is best supported by evidence and constraints?",
+      "choices": [
+        "Pilot reduced support backlog in matched teams",
+        "Backlog decline created the pilot months earlier",
+        "Coffee brand caused retention shift",
+        "Poster font caused compliance rates"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "adult_evidence_logic_3",
+    "age_band": "adult",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "easy",
+    "title": "Applied Reasoning Brief 3",
+    "content": {
+      "story": "An adult learner reviews planning risk and credibility questions before a practical decision.",
+      "image": "/images/stories/market-math.svg",
+      "method": "Prebunking game strategy",
+      "evidence_note": "Inoculation style tasks improve resistance to manipulation cues.",
+      "debrief": "What assumption could fail and what evidence would test it quickly?",
+      "prompt": "Which option is best supported by evidence and constraints?",
+      "choices": [
+        "Triangulate logs interviews and outcomes",
+        "Use single anecdote as final proof",
+        "Use intuition alone",
+        "Use trend line without source"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "adult_evidence_logic_4",
+    "age_band": "adult",
+    "type": "logic_game",
+    "skill": "sequencing",
+    "difficulty": "easy",
+    "title": "Applied Reasoning Brief 4",
+    "content": {
+      "story": "An adult learner reviews planning risk and credibility questions before a practical decision.",
+      "image": "/images/stories/science-lab.svg",
+      "method": "Evidence first decision protocol",
+      "evidence_note": "Reasoning improves when assumptions and evidence are separated before action.",
+      "debrief": "What assumption could fail and what evidence would test it quickly?",
+      "prompt": "Which option is best supported by evidence and constraints?",
+      "choices": [
+        "Define scope map argument then test",
+        "Scale solution before defining scope",
+        "Skip test and publish",
+        "Decide then seek reasons"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "adult_evidence_logic_5",
+    "age_band": "adult",
+    "type": "logic_game",
+    "skill": "elimination",
+    "difficulty": "medium",
+    "title": "Applied Reasoning Brief 5",
+    "content": {
+      "story": "An adult learner reviews planning risk and credibility questions before a practical decision.",
+      "image": "/images/stories/team-strategy.svg",
+      "method": "Argument mapping",
+      "evidence_note": "Argument mapping with explicit claim reason objection links improves critical thinking.",
+      "debrief": "What assumption could fail and what evidence would test it quickly?",
+      "prompt": "Which option is best supported by evidence and constraints?",
+      "choices": [
+        "Remove options that break legal or budget limits",
+        "Keep illegal option because it is simple",
+        "Choose option with strongest wording",
+        "Choose option with lowest effort only"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "adult_evidence_logic_6",
+    "age_band": "adult",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "medium",
+    "title": "Applied Reasoning Brief 6",
+    "content": {
+      "story": "An adult learner reviews planning risk and credibility questions before a practical decision.",
+      "image": "/images/stories/city-plan.svg",
+      "method": "Lateral reading",
+      "evidence_note": "Fact checker style lateral reading instruction improves source evaluation.",
+      "debrief": "What assumption could fail and what evidence would test it quickly?",
+      "prompt": "Which option is best supported by evidence and constraints?",
+      "choices": [
+        "Open external verification before trusting claim",
+        "Trust source because it matches prior view",
+        "Trust source with hidden author",
+        "Trust source because many likes"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "adult_evidence_logic_7",
+    "age_band": "adult",
+    "type": "logic_game",
+    "skill": "pattern",
+    "difficulty": "medium",
+    "title": "Applied Reasoning Brief 7",
+    "content": {
+      "story": "An adult learner reviews planning risk and credibility questions before a practical decision.",
+      "image": "/images/stories/forest-trail.svg",
+      "method": "Prebunking game strategy",
+      "evidence_note": "Inoculation style tasks improve resistance to manipulation cues.",
+      "debrief": "What assumption could fail and what evidence would test it quickly?",
+      "prompt": "Which option is best supported by evidence and constraints?",
+      "choices": [
+        "Demand follows stable seasonal cycle",
+        "Demand has no pattern but guaranteed forecast",
+        "Demand goes both up and down the same week from one cause",
+        "Demand ignores all observed data points"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "adult_evidence_logic_8",
+    "age_band": "adult",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "medium",
+    "title": "Applied Reasoning Brief 8",
+    "content": {
+      "story": "An adult learner reviews planning risk and credibility questions before a practical decision.",
+      "image": "/images/stories/ocean-route.svg",
+      "method": "Evidence first decision protocol",
+      "evidence_note": "Reasoning improves when assumptions and evidence are separated before action.",
+      "debrief": "What assumption could fail and what evidence would test it quickly?",
+      "prompt": "Which option is best supported by evidence and constraints?",
+      "choices": [
+        "Pilot reduced support backlog in matched teams",
+        "Backlog decline created the pilot months earlier",
+        "Coffee brand caused retention shift",
+        "Poster font caused compliance rates"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "adult_evidence_logic_9",
+    "age_band": "adult",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "hard",
+    "title": "Applied Reasoning Brief 9",
+    "content": {
+      "story": "An adult learner reviews planning risk and credibility questions before a practical decision.",
+      "image": "/images/stories/space-camp.svg",
+      "method": "Argument mapping",
+      "evidence_note": "Argument mapping with explicit claim reason objection links improves critical thinking.",
+      "debrief": "What assumption could fail and what evidence would test it quickly?",
+      "prompt": "Which option is best supported by evidence and constraints?",
+      "choices": [
+        "Triangulate logs interviews and outcomes",
+        "Use single anecdote as final proof",
+        "Use intuition alone",
+        "Use trend line without source"
+      ],
+      "correctIndex": 0,
+      "explanation": "This answer best matches the evidence and constraints in the scenario.",
+      "tip": "Name one clue that supports your choice before you lock it in."
+    }
+  },
+  {
+    "id": "g1_1",
+    "age_band": "7-9",
+    "type": "game",
+    "skill": "fair_test",
+    "difficulty": "medium",
+    "title": "Fair Test Builder",
+    "content": {
+      "story": "You are comparing two paper towels to see which absorbs more water.",
+      "image": "/images/stories/science-lab.svg",
+      "method": "Fair test",
+      "evidence_note": "Fair tests control variables so results are comparable.",
+      "debrief": "Which variable did you keep constant, and which one changed?",
+      "prompt": "You test which paper towel absorbs more water. What should stay the SAME?",
+      "choices": [
+        "Amount of water",
+        "Type of towel",
+        "How hard you squeeze"
+      ],
+      "correctIndex": 0,
+      "explanation": "To compare fairly, only change one thing.",
+      "tip": "Keep everything the same except one change."
+    }
+  },
+  {
+    "id": "g1_2",
+    "age_band": "7-9",
+    "type": "game",
+    "skill": "evidence",
+    "difficulty": "medium",
+    "title": "Best Evidence",
+    "content": {
+      "story": "You are testing whether plants need light.",
+      "image": "/images/stories/forest-trail.svg",
+      "method": "Evidence quality",
+      "evidence_note": "Comparative evidence is stronger than a single observation or opinion.",
+      "debrief": "Why is a comparison stronger than one example?",
+      "prompt": "Which is the BEST evidence that plants need light?",
+      "choices": [
+        "One plant grew in sunlight",
+        "Two plants tested, only the sunny one grew",
+        "My friend says so"
+      ],
+      "correctIndex": 1,
+      "explanation": "Comparing two plants gives stronger evidence.",
+      "tip": "Good evidence compares results."
+    }
+  },
+  {
+    "id": "g1_3",
+    "age_band": "7-9",
+    "type": "game",
+    "skill": "pattern",
+    "difficulty": "medium",
+    "title": "Spot the Pattern",
+    "content": {
+      "story": "You record plant height each day and notice changes.",
+      "image": "/images/stories/park-path.svg",
+      "method": "Pattern reading",
+      "evidence_note": "Tracking data over time helps identify growth patterns.",
+      "debrief": "What trend did you see over time?",
+      "prompt": "A plant grows taller each day. What is the pattern?",
+      "choices": [
+        "It is shrinking",
+        "It is growing",
+        "It stays the same"
+      ],
+      "correctIndex": 1,
+      "explanation": "If it gets taller, it is growing.",
+      "tip": "Look for changes over time."
+    }
+  },
+  {
+    "id": "g1_4",
+    "age_band": "7-9",
+    "type": "game",
+    "skill": "cause_effect",
+    "difficulty": "medium",
+    "title": "Food Chain",
+    "content": {
+      "story": "Frogs eat insects in a food chain.",
+      "image": "/images/stories/community-help.svg",
+      "method": "Cause and effect",
+      "evidence_note": "Food-chain links support systems-level reasoning.",
+      "debrief": "What happens when a food source decreases?",
+      "prompt": "If insects disappear, what happens to frogs?",
+      "choices": [
+        "More frogs",
+        "Fewer frogs",
+        "Nothing changes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Frogs eat insects. Less food means fewer frogs.",
+      "tip": "Think about who eats what."
+    }
+  },
+  {
+    "id": "g1_5",
+    "age_band": "7-9",
+    "type": "game",
+    "skill": "observation_vs_inference",
+    "difficulty": "medium",
+    "title": "Science Detective",
+    "content": {
+      "story": "You look up and see a dark sky before going outside.",
+      "image": "/images/stories/ocean-route.svg",
+      "method": "Observation vs inference",
+      "evidence_note": "Inference statements go beyond direct observation.",
+      "debrief": "What part is observed, and what part is inferred?",
+      "prompt": "The sky is dark. 'It will rain soon.' Is that an observation or inference?",
+      "choices": [
+        "Observation",
+        "Inference"
+      ],
+      "correctIndex": 1,
+      "explanation": "Rain is a guess based on the dark sky.",
+      "tip": "Inferences are smart guesses."
+    }
+  },
+  {
+    "id": "g3_1",
+    "age_band": "10-13",
+    "type": "game",
+    "skill": "variables",
+    "difficulty": "hard",
+    "title": "Too Many Changes",
+    "content": {
+      "story": "A student tests toy car speed on a ramp.",
+      "image": "/images/stories/team-strategy.svg",
+      "method": "Variables control",
+      "evidence_note": "Changing multiple variables weakens causal conclusions.",
+      "debrief": "Which variable should be changed alone in the next test?",
+      "prompt": "A student changed ramp height AND car weight. Can they tell what caused the difference?",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "correctIndex": 1,
+      "explanation": "They changed more than one variable.",
+      "tip": "Change one variable at a time."
+    }
+  },
+  {
+    "id": "g3_2",
+    "age_band": "10-13",
+    "type": "game",
+    "skill": "data_analysis",
+    "difficulty": "hard",
+    "title": "Graph Match",
+    "content": {
+      "story": "You read a report: temperature rises, then falls.",
+      "image": "/images/stories/city-plan.svg",
+      "method": "Data representation",
+      "evidence_note": "Graph interpretation supports evidence-based reasoning.",
+      "debrief": "What part of the graph shows the turning point?",
+      "prompt": "Temperature rises, then falls. Which graph fits?",
+      "choices": [
+        "Up then down",
+        "Flat line",
+        "Down then up"
+      ],
+      "correctIndex": 0,
+      "explanation": "The graph must show increase then decrease.",
+      "tip": "Match words to patterns."
+    }
+  },
+  {
+    "id": "g3_3",
+    "age_band": "10-13",
+    "type": "game",
+    "skill": "sample_size",
+    "difficulty": "hard",
+    "title": "Is This Enough?",
+    "content": {
+      "story": "A class measured plant growth with music for one day.",
+      "image": "/images/stories/library-riddle.svg",
+      "method": "Sample size reasoning",
+      "evidence_note": "More trials are needed before generalizing conclusions.",
+      "debrief": "How many additional trials would improve confidence?",
+      "prompt": "One day of data shows plants grew faster with music. Can we conclude music always helps?",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "correctIndex": 1,
+      "explanation": "One day is not enough evidence.",
+      "tip": "More trials give stronger evidence."
+    }
+  },
+  {
+    "id": "g3_4",
+    "age_band": "10-13",
+    "type": "game",
+    "skill": "credibility",
+    "difficulty": "hard",
+    "title": "Which Source?",
+    "content": {
+      "story": "You need accurate science facts for a report.",
+      "image": "/images/stories/space-camp.svg",
+      "method": "Source credibility",
+      "evidence_note": "Source quality is central to reliable scientific reasoning.",
+      "debrief": "What signals made this source more trustworthy?",
+      "prompt": "Who is most reliable for science facts?",
+      "choices": [
+        "Science museum website",
+        "Random video",
+        "Friend's guess"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trusted institutions review information carefully.",
+      "tip": "Check who created the information."
+    }
+  },
+  {
+    "id": "g3_5",
+    "age_band": "10-13",
+    "type": "game",
+    "skill": "engineering_design",
+    "difficulty": "hard",
+    "title": "Bridge Builder",
+    "content": {
+      "story": "Your team is redesigning a weak paper bridge.",
+      "image": "/images/stories/city-plan.svg",
+      "method": "Engineering design",
+      "evidence_note": "Structural reasoning improves with constraint-based design choices.",
+      "debrief": "Why do triangles improve load distribution?",
+      "prompt": "Which change likely makes a paper bridge stronger?",
+      "choices": [
+        "Add triangle supports",
+        "Make it thinner",
+        "Make it longer without support"
+      ],
+      "correctIndex": 0,
+      "explanation": "Triangles distribute weight and add strength.",
+      "tip": "Think about structure and support."
+    }
+  },
+  {
+    "id": "science_10_13_01_engineering_boat",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "medium",
+    "title": "Boat Build Iteration",
+    "content": {
+      "story": "Your first paper boat sinks at 6 pennies. Goal is 10 pennies.",
+      "image": "/images/stories/ocean-route.svg",
+      "method": "Engineering iteration",
+      "evidence_note": "Iterative testing with measured outcomes improves design reasoning.",
+      "debrief": "What single design change would you test next?",
+      "prompt": "Best next change?",
+      "choices": [
+        "Wider base and same material",
+        "Change material and size and shape at once",
+        "Use fewer pennies and claim success",
+        "Skip retest and guess"
+      ],
+      "correctIndex": 0,
+      "explanation": "A wider base can improve stability while isolating one main change.",
+      "tip": "Iterate one meaningful change at a time."
+    }
+  },
+  {
+    "id": "science_10_13_02_bridge_strength",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "elimination",
+    "difficulty": "medium",
+    "title": "Bridge Strength Tradeoff",
+    "content": {
+      "story": "A paper bridge fails under load.",
+      "image": "/images/stories/city-plan.svg",
+      "method": "Constraint reasoning",
+      "evidence_note": "Engineering tasks build reasoning around tradeoffs and constraints.",
+      "debrief": "Why is this design change likely stronger?",
+      "prompt": "Which change most likely increases strength?",
+      "choices": [
+        "Add triangle supports",
+        "Remove supports for speed",
+        "Make span longer with same thickness",
+        "Ignore failure and retest unchanged"
+      ],
+      "correctIndex": 0,
+      "explanation": "Triangulation increases structural stability.",
+      "tip": "Choose changes tied to load paths."
+    }
+  },
+  {
+    "id": "science_10_13_03_misinformation_kidsafe",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "medium",
+    "title": "Science Claim Check",
+    "content": {
+      "story": "Claim: Plants grow faster with music.",
+      "image": "/images/stories/community-help.svg",
+      "method": "Question quality",
+      "evidence_note": "Asking for controls and sample size improves claim evaluation.",
+      "debrief": "What test detail matters most before believing the claim?",
+      "prompt": "What info do you need first?",
+      "choices": [
+        "Control group and number of plants",
+        "The song title only",
+        "The loudest speaker",
+        "The prettiest plant photo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Good evidence needs controls and adequate sample size.",
+      "tip": "Ask: compared to what, and how many samples?"
+    }
+  },
+  {
+    "id": "science_10_13_04_adaptation_match",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "easy",
+    "title": "Adaptation Match",
+    "content": {
+      "story": "Polar bear adaptation question.",
+      "image": "/images/stories/forest-trail.svg",
+      "method": "Function reasoning",
+      "evidence_note": "Matching structure to function supports explanatory thinking.",
+      "debrief": "How does this trait help survival?",
+      "prompt": "Why does a polar bear have thick fur?",
+      "choices": [
+        "Insulation in cold environments",
+        "To run faster than fish",
+        "To breathe underwater",
+        "To attract lightning"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thick fur helps reduce heat loss.",
+      "tip": "Connect trait to environmental need."
+    }
+  },
+  {
+    "id": "science_10_13_05_rock_mineral_fossil",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "elimination",
+    "difficulty": "medium",
+    "title": "Classify with Evidence",
+    "content": {
+      "story": "You find an object with a shell imprint in stone.",
+      "image": "/images/stories/library-riddle.svg",
+      "method": "Classification under uncertainty",
+      "evidence_note": "Classification improves when tied to evidence and uncertainty handling.",
+      "debrief": "What evidence points to your category?",
+      "prompt": "Best classification?",
+      "choices": [
+        "Fossil",
+        "Mineral crystal",
+        "Igneous rock only",
+        "Unknown because no evidence matters"
+      ],
+      "correctIndex": 0,
+      "explanation": "A preserved imprint of life is fossil evidence.",
+      "tip": "Use defining features, not guesses."
+    }
+  },
+  {
+    "id": "science_4_6_01_notice_infer",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "easy",
+    "title": "Notice or Infer",
+    "content": {
+      "story": "You see a picture with dark clouds and wet ground.",
+      "image": "/images/stories/forest-trail.svg",
+      "method": "Observation vs inference",
+      "evidence_note": "Separating what is seen from what is guessed builds early scientific reasoning.",
+      "debrief": "Which answer was something you could directly see?",
+      "prompt": "Which choice is an observation?",
+      "choices": [
+        "The ground is wet",
+        "It rained all night",
+        "The storm was scary",
+        "Tomorrow will be sunny"
+      ],
+      "correctIndex": 0,
+      "explanation": "An observation is something you can directly see or measure.",
+      "tip": "Look for words you can prove with your eyes."
+    }
+  },
+  {
+    "id": "science_4_6_02_tool_choice",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "easy",
+    "title": "Pick the Right Tool",
+    "content": {
+      "story": "A toy car rolls down a ramp.",
+      "image": "/images/stories/science-lab.svg",
+      "method": "Method matching",
+      "evidence_note": "Choosing the right measuring tool strengthens test quality.",
+      "debrief": "Why does this tool match the question?",
+      "prompt": "What tool measures how long the car rolls?",
+      "choices": [
+        "Stopwatch",
+        "Thermometer",
+        "Scale",
+        "Magnifying glass"
+      ],
+      "correctIndex": 0,
+      "explanation": "A stopwatch measures time.",
+      "tip": "Match the tool to the thing you measure."
+    }
+  },
+  {
+    "id": "science_4_6_03_best_evidence_light",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "easy",
+    "title": "Best Plant Evidence",
+    "content": {
+      "story": "Two plants get the same water. One gets light and one stays dark.",
+      "image": "/images/stories/park-path.svg",
+      "method": "Evidence quality",
+      "evidence_note": "Fair comparisons make evidence stronger.",
+      "debrief": "What was kept the same in this test?",
+      "prompt": "Which evidence best supports plants need light?",
+      "choices": [
+        "The light plant grew taller than the dark plant",
+        "One plant looked prettier",
+        "A friend said plants like windows",
+        "The pot color was green"
+      ],
+      "correctIndex": 0,
+      "explanation": "This compares two plants while keeping key parts the same.",
+      "tip": "Strong evidence compares fairly."
+    }
+  },
+  {
+    "id": "science_4_6_04_prediction_ice",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "easy",
+    "title": "Ice Prediction",
+    "content": {
+      "story": "One ice cube is in sun. One is in shade.",
+      "image": "/images/stories/ocean-route.svg",
+      "method": "Prediction with reason",
+      "evidence_note": "Linking prediction to cause improves explanation skills.",
+      "debrief": "What cause did you use in your prediction?",
+      "prompt": "What happens first?",
+      "choices": [
+        "The ice in sun melts faster",
+        "Both freeze harder",
+        "Shade ice melts faster every time",
+        "Neither changes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sun provides more heat, so melting is faster.",
+      "tip": "Think: more heat, less heat, or same heat?"
+    }
+  },
+  {
+    "id": "science_4_6_05_one_change_only",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "sequencing",
+    "difficulty": "easy",
+    "title": "One Change Rule",
+    "content": {
+      "story": "A class changed ramp height and car weight at the same time.",
+      "image": "/images/stories/market-math.svg",
+      "method": "Fair test basics",
+      "evidence_note": "Changing one variable at a time helps identify causes.",
+      "debrief": "What should they change next time?",
+      "prompt": "Can they tell what caused the result?",
+      "choices": [
+        "No, because they changed more than one thing",
+        "Yes, because two changes are better",
+        "Yes, because the cars were colorful",
+        "No, because ramps never work"
+      ],
+      "correctIndex": 0,
+      "explanation": "Too many changes means unclear cause.",
+      "tip": "One test question, one change."
+    }
+  },
+  {
+    "id": "science_4_6_06_living_nonliving",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "elimination",
+    "difficulty": "easy",
+    "title": "Living or Not",
+    "content": {
+      "story": "You are sorting objects for science class.",
+      "image": "/images/stories/community-help.svg",
+      "method": "Classification",
+      "evidence_note": "Using criteria supports accurate categorization.",
+      "debrief": "What rule helped you choose?",
+      "prompt": "Which item is living?",
+      "choices": [
+        "Worm",
+        "Rock",
+        "Toy car",
+        "Spoon"
+      ],
+      "correctIndex": 0,
+      "explanation": "A worm grows and needs food.",
+      "tip": "Living things grow and need resources."
+    }
+  },
+  {
+    "id": "science_4_6_07_pattern_height",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "pattern",
+    "difficulty": "easy",
+    "title": "Plant Pattern",
+    "content": {
+      "story": "Plant heights: 2 cm, 3 cm, 4 cm, 5 cm.",
+      "image": "/images/stories/park-path.svg",
+      "method": "Pattern reading",
+      "evidence_note": "Pattern recognition supports early data interpretation.",
+      "debrief": "How much did it grow each day?",
+      "prompt": "What is the best next height?",
+      "choices": [
+        "6 cm",
+        "3 cm",
+        "10 cm",
+        "1 cm"
+      ],
+      "correctIndex": 0,
+      "explanation": "The pattern grows by 1 each step.",
+      "tip": "Check how much changes each time."
+    }
+  },
+  {
+    "id": "science_4_6_08_odd_magnetic",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "elimination",
+    "difficulty": "easy",
+    "title": "Odd One Out",
+    "content": {
+      "story": "A magnet sticks to paper clip, nail, and can.",
+      "image": "/images/stories/kitchen-plan.svg",
+      "method": "Property reasoning",
+      "evidence_note": "Comparing properties helps reasoning by elimination.",
+      "debrief": "What property made one item different?",
+      "prompt": "Which item does not belong?",
+      "choices": [
+        "Rubber eraser",
+        "Paper clip",
+        "Nail",
+        "Metal can"
+      ],
+      "correctIndex": 0,
+      "explanation": "The eraser is not magnetic.",
+      "tip": "Find the item missing the shared property."
+    }
+  },
+  {
+    "id": "science_4_6_09_food_chain",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "easy",
+    "title": "Food Chain What If",
+    "content": {
+      "story": "Frogs eat insects.",
+      "image": "/images/stories/forest-trail.svg",
+      "method": "Systems thinking",
+      "evidence_note": "Simple system links build causal reasoning.",
+      "debrief": "What happened first in the chain?",
+      "prompt": "If insects decrease a lot, what may happen to frogs?",
+      "choices": [
+        "Frog numbers may decrease",
+        "Frog numbers always double",
+        "Frogs become plants",
+        "Nothing can ever change"
+      ],
+      "correctIndex": 0,
+      "explanation": "Less food can mean fewer frogs.",
+      "tip": "Follow the food connection."
+    }
+  },
+  {
+    "id": "science_4_6_10_source_check",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "easy",
+    "title": "Who Is Reliable?",
+    "content": {
+      "story": "You need a science fact about planets.",
+      "image": "/images/stories/space-camp.svg",
+      "method": "Source credibility basics",
+      "evidence_note": "Early source checks reduce misinformation uptake.",
+      "debrief": "Why is this source more trustworthy?",
+      "prompt": "Which source is most reliable?",
+      "choices": [
+        "A science museum website",
+        "A random anonymous comment",
+        "A joke page with no author",
+        "A rumor from a game chat"
+      ],
+      "correctIndex": 0,
+      "explanation": "Science institutions provide reviewed information.",
+      "tip": "Choose sources with experts and clear names."
+    }
+  },
+  {
+    "id": "science_7_9_01_notice_infer",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "easy",
+    "title": "Observation or Inference",
+    "content": {
+      "story": "A plant near the window leans toward light.",
+      "image": "/images/stories/science-lab.svg",
+      "method": "Evidence distinction",
+      "evidence_note": "Distinguishing observation from inference improves claim quality.",
+      "debrief": "Which answer was directly observed, not guessed?",
+      "prompt": "Which statement is an inference?",
+      "choices": [
+        "The plant leans because it is growing toward light",
+        "The stem is bent toward the window",
+        "The leaves are green",
+        "The pot is on a shelf"
+      ],
+      "correctIndex": 0,
+      "explanation": "Inference explains why; observation reports what is seen.",
+      "tip": "Look for because-statements."
+    }
+  },
+  {
+    "id": "science_7_9_02_tool_match",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "easy",
+    "title": "Tool Match Challenge",
+    "content": {
+      "story": "You want to compare plant growth over one week.",
+      "image": "/images/stories/park-path.svg",
+      "method": "Method-tool alignment",
+      "evidence_note": "Correct tool selection improves measurement validity.",
+      "debrief": "What exactly does this tool measure?",
+      "prompt": "Best tool to measure growth?",
+      "choices": [
+        "Ruler",
+        "Stopwatch",
+        "Compass",
+        "Scale for mass only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Growth in height is measured with a ruler.",
+      "tip": "Match the unit to the question."
+    }
+  },
+  {
+    "id": "science_7_9_03_best_evidence",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "easy",
+    "title": "Best Evidence Pick",
+    "content": {
+      "story": "Question: Do plants need light to grow well?",
+      "image": "/images/stories/forest-trail.svg",
+      "method": "Claim-evidence reasoning",
+      "evidence_note": "Controlled comparison gives stronger evidence than anecdotes.",
+      "debrief": "Which variable was changed in the best test?",
+      "prompt": "Which evidence is strongest?",
+      "choices": [
+        "Two same plants: one light, one dark, same water",
+        "One plant looked happy today",
+        "My cousin says sunlight helps",
+        "A cartoon showed a big tree"
+      ],
+      "correctIndex": 0,
+      "explanation": "This uses a fair comparison with one key change.",
+      "tip": "Strong evidence compares fairly."
+    }
+  },
+  {
+    "id": "science_7_9_04_prediction_reason",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "easy",
+    "title": "Predict and Explain",
+    "content": {
+      "story": "An ice cube sits in sun and another in shade.",
+      "image": "/images/stories/ocean-route.svg",
+      "method": "Prediction + mechanism",
+      "evidence_note": "Predictions improve when tied to a causal mechanism.",
+      "debrief": "What mechanism explains your choice?",
+      "prompt": "Which prediction and reason fit science best?",
+      "choices": [
+        "Sun ice melts faster because it gets more heat",
+        "Shade ice melts faster because shade is bright",
+        "Both freeze because air exists",
+        "Neither changes because ice is cold"
+      ],
+      "correctIndex": 0,
+      "explanation": "More heat energy speeds melting.",
+      "tip": "Pair your prediction with a why."
+    }
+  },
+  {
+    "id": "science_7_9_05_fair_test_builder",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "sequencing",
+    "difficulty": "medium",
+    "title": "Fair Test Builder",
+    "content": {
+      "story": "You test which ramp surface makes a toy car go farthest.",
+      "image": "/images/stories/market-math.svg",
+      "method": "Variables control",
+      "evidence_note": "Fair tests control non-target variables.",
+      "debrief": "Which variable should change, and which stay the same?",
+      "prompt": "What should you keep the same?",
+      "choices": [
+        "Ramp height and car type",
+        "Surface and ramp height",
+        "Car type and measurement unit",
+        "Everything should change"
+      ],
+      "correctIndex": 0,
+      "explanation": "Keep other conditions fixed when testing one variable.",
+      "tip": "Change one thing, hold the rest."
+    }
+  },
+  {
+    "id": "science_7_9_06_one_change_only",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "sequencing",
+    "difficulty": "medium",
+    "title": "Too Many Changes",
+    "content": {
+      "story": "A group changed ramp height and wheel size together.",
+      "image": "/images/stories/team-strategy.svg",
+      "method": "Experimental design check",
+      "evidence_note": "Confounded variables weaken causal conclusions.",
+      "debrief": "How can they redesign to find one cause?",
+      "prompt": "Can they tell which change caused the result?",
+      "choices": [
+        "No, because two variables changed",
+        "Yes, because any result is enough",
+        "Yes, because bigger wheels are always faster",
+        "No, because experiments never work"
+      ],
+      "correctIndex": 0,
+      "explanation": "They need one variable change for a clear cause.",
+      "tip": "Avoid confounding changes."
+    }
+  },
+  {
+    "id": "science_7_9_07_graph_match",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "pattern",
+    "difficulty": "medium",
+    "title": "Graph Match",
+    "content": {
+      "story": "Temperature rises in morning, then drops at night.",
+      "image": "/images/stories/city-plan.svg",
+      "method": "Representation matching",
+      "evidence_note": "Matching narrative to graph strengthens data literacy.",
+      "debrief": "Which part of the graph matches the story turn?",
+      "prompt": "Which graph shape fits best?",
+      "choices": [
+        "Up then down",
+        "Down then up",
+        "Flat all day",
+        "Random jumps only"
+      ],
+      "correctIndex": 0,
+      "explanation": "The story says increase followed by decrease.",
+      "tip": "Map each sentence to graph direction."
+    }
+  },
+  {
+    "id": "science_7_9_08_data_enough",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "medium",
+    "title": "Enough Data?",
+    "content": {
+      "story": "A test was done once on one day.",
+      "image": "/images/stories/library-riddle.svg",
+      "method": "Sample-size awareness",
+      "evidence_note": "Repeated trials improve reliability and reduce overgeneralization.",
+      "debrief": "What extra data would make this claim stronger?",
+      "prompt": "Can we claim it is always true?",
+      "choices": [
+        "No, we need more trials",
+        "Yes, one trial proves all",
+        "Yes, because it sounded right",
+        "No, because science avoids data"
+      ],
+      "correctIndex": 0,
+      "explanation": "One trial is not enough for broad claims.",
+      "tip": "Ask: How many tests did we run?"
+    }
+  },
+  {
+    "id": "science_7_9_09_cer_mini",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "medium",
+    "title": "CER Mini",
+    "content": {
+      "story": "Claim: Plants need light for healthy growth.",
+      "image": "/images/stories/science-lab.svg",
+      "method": "CER selection",
+      "evidence_note": "Claim-Evidence-Reasoning structure supports clear scientific argumentation.",
+      "debrief": "How does your evidence support the claim?",
+      "prompt": "Which evidence best supports the claim?",
+      "choices": [
+        "Plant with light grew 6 cm; dark plant grew 1 cm",
+        "Plants are pretty",
+        "I like sunny days",
+        "Green is my favorite color"
+      ],
+      "correctIndex": 0,
+      "explanation": "This directly compares growth outcomes.",
+      "tip": "Pick evidence linked to the claim."
+    }
+  },
+  {
+    "id": "science_7_9_10_source_check_kids",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "medium",
+    "title": "Source Check for Kids",
+    "content": {
+      "story": "You need facts about volcanoes.",
+      "image": "/images/stories/space-camp.svg",
+      "method": "Credibility basics",
+      "evidence_note": "Simple source criteria improve information quality decisions.",
+      "debrief": "What made this source more trustworthy?",
+      "prompt": "Which source is most reliable?",
+      "choices": [
+        "National science museum page with named experts",
+        "Anonymous meme account",
+        "Random comment with no link",
+        "A post that says trust me"
+      ],
+      "correctIndex": 0,
+      "explanation": "Named experts and institutions improve reliability.",
+      "tip": "Check who wrote it and where it comes from."
+    }
+  },
+  {
+    "id": "tk1",
+    "age_band": "4-6",
+    "type": "game",
+    "skill": "observation",
+    "difficulty": "easy",
+    "title": "Notice or Guess?",
+    "content": {
+      "story": "You are a science detective looking at a puddle on the ground.",
+      "image": "/images/stories/forest-trail.svg",
+      "method": "Observation vs inference",
+      "evidence_note": "Observation means reporting what you can directly sense.",
+      "debrief": "Which answer was a direct observation, not a guess?",
+      "prompt": "You see a puddle on the ground. Which is something you can NOTICE?",
+      "choices": [
+        "The ground is wet",
+        "It rained last night",
+        "Someone spilled water"
+      ],
+      "correctIndex": 0,
+      "explanation": "You can see the ground is wet. The other answers are guesses.",
+      "tip": "Observations are things you can see, hear, or touch."
+    }
+  },
+  {
+    "id": "tk2",
+    "age_band": "4-6",
+    "type": "game",
+    "skill": "cause_effect",
+    "difficulty": "easy",
+    "title": "What Happens Next?",
+    "content": {
+      "story": "An ice cube sits outside in the warm sun.",
+      "image": "/images/stories/ocean-route.svg",
+      "method": "Cause and effect",
+      "evidence_note": "Heat causes state changes in materials like ice.",
+      "debrief": "What caused the change in the ice?",
+      "prompt": "An ice cube is left in the sun. What will happen?",
+      "choices": [
+        "It melts",
+        "It grows bigger",
+        "It turns into a rock"
+      ],
+      "correctIndex": 0,
+      "explanation": "Heat from the sun makes ice melt.",
+      "tip": "Think about what heat does to cold things."
+    }
+  },
+  {
+    "id": "tk3",
+    "age_band": "4-6",
+    "type": "game",
+    "skill": "classification",
+    "difficulty": "easy",
+    "title": "Living or Not?",
+    "content": {
+      "story": "You are sorting items into living and nonliving groups.",
+      "image": "/images/stories/community-help.svg",
+      "method": "Classification",
+      "evidence_note": "Living things grow and need resources.",
+      "debrief": "What feature told you it was living?",
+      "prompt": "Which one is living?",
+      "choices": [
+        "A rock",
+        "A worm",
+        "A shoe"
+      ],
+      "correctIndex": 1,
+      "explanation": "A worm grows and needs food. Rocks and shoes do not.",
+      "tip": "Living things grow and need food."
+    }
+  },
+  {
+    "id": "tk4",
+    "age_band": "4-6",
+    "type": "game",
+    "skill": "tools",
+    "difficulty": "easy",
+    "title": "Pick the Tool",
+    "content": {
+      "story": "You need to look at tiny details in a science sample.",
+      "image": "/images/stories/science-lab.svg",
+      "method": "Tool selection",
+      "evidence_note": "Choosing the right scientific tool improves observations.",
+      "debrief": "Why is that tool the best fit for this question?",
+      "prompt": "What tool helps you see tiny things?",
+      "choices": [
+        "Microscope",
+        "Ruler",
+        "Scale"
+      ],
+      "correctIndex": 0,
+      "explanation": "A microscope helps you see small things.",
+      "tip": "Different tools help us answer different questions."
+    }
+  },
+  {
+    "id": "tk5",
+    "age_band": "4-6",
+    "type": "game",
+    "skill": "prediction",
+    "difficulty": "easy",
+    "title": "Shadow Time",
+    "content": {
+      "story": "You stand outside and watch your shadow during the day.",
+      "image": "/images/stories/park-path.svg",
+      "method": "Prediction",
+      "evidence_note": "Sun position changes shadow direction and length.",
+      "debrief": "How could you test this again later today?",
+      "prompt": "When the sun moves, what happens to your shadow?",
+      "choices": [
+        "It moves",
+        "It disappears forever",
+        "It grows legs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Shadows change when the sun moves.",
+      "tip": "Look at patterns during the day."
+    }
+  }
+]

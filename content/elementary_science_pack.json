@@ -1,0 +1,627 @@
+[
+  {
+    "id": "science_4_6_01_notice_infer",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "easy",
+    "title": "Notice or Infer",
+    "content": {
+      "story": "You see a picture with dark clouds and wet ground.",
+      "image": "/images/stories/forest-trail.svg",
+      "method": "Observation vs inference",
+      "evidence_note": "Separating what is seen from what is guessed builds early scientific reasoning.",
+      "debrief": "Which answer was something you could directly see?",
+      "prompt": "Which choice is an observation?",
+      "choices": [
+        "The ground is wet",
+        "It rained all night",
+        "The storm was scary",
+        "Tomorrow will be sunny"
+      ],
+      "correctIndex": 0,
+      "explanation": "An observation is something you can directly see or measure.",
+      "tip": "Look for words you can prove with your eyes."
+    }
+  },
+  {
+    "id": "science_4_6_02_tool_choice",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "easy",
+    "title": "Pick the Right Tool",
+    "content": {
+      "story": "A toy car rolls down a ramp.",
+      "image": "/images/stories/science-lab.svg",
+      "method": "Method matching",
+      "evidence_note": "Choosing the right measuring tool strengthens test quality.",
+      "debrief": "Why does this tool match the question?",
+      "prompt": "What tool measures how long the car rolls?",
+      "choices": [
+        "Stopwatch",
+        "Thermometer",
+        "Scale",
+        "Magnifying glass"
+      ],
+      "correctIndex": 0,
+      "explanation": "A stopwatch measures time.",
+      "tip": "Match the tool to the thing you measure."
+    }
+  },
+  {
+    "id": "science_4_6_03_best_evidence_light",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "easy",
+    "title": "Best Plant Evidence",
+    "content": {
+      "story": "Two plants get the same water. One gets light and one stays dark.",
+      "image": "/images/stories/park-path.svg",
+      "method": "Evidence quality",
+      "evidence_note": "Fair comparisons make evidence stronger.",
+      "debrief": "What was kept the same in this test?",
+      "prompt": "Which evidence best supports plants need light?",
+      "choices": [
+        "The light plant grew taller than the dark plant",
+        "One plant looked prettier",
+        "A friend said plants like windows",
+        "The pot color was green"
+      ],
+      "correctIndex": 0,
+      "explanation": "This compares two plants while keeping key parts the same.",
+      "tip": "Strong evidence compares fairly."
+    }
+  },
+  {
+    "id": "science_4_6_04_prediction_ice",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "easy",
+    "title": "Ice Prediction",
+    "content": {
+      "story": "One ice cube is in sun. One is in shade.",
+      "image": "/images/stories/ocean-route.svg",
+      "method": "Prediction with reason",
+      "evidence_note": "Linking prediction to cause improves explanation skills.",
+      "debrief": "What cause did you use in your prediction?",
+      "prompt": "What happens first?",
+      "choices": [
+        "The ice in sun melts faster",
+        "Both freeze harder",
+        "Shade ice melts faster every time",
+        "Neither changes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sun provides more heat, so melting is faster.",
+      "tip": "Think: more heat, less heat, or same heat?"
+    }
+  },
+  {
+    "id": "science_4_6_05_one_change_only",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "sequencing",
+    "difficulty": "easy",
+    "title": "One Change Rule",
+    "content": {
+      "story": "A class changed ramp height and car weight at the same time.",
+      "image": "/images/stories/market-math.svg",
+      "method": "Fair test basics",
+      "evidence_note": "Changing one variable at a time helps identify causes.",
+      "debrief": "What should they change next time?",
+      "prompt": "Can they tell what caused the result?",
+      "choices": [
+        "No, because they changed more than one thing",
+        "Yes, because two changes are better",
+        "Yes, because the cars were colorful",
+        "No, because ramps never work"
+      ],
+      "correctIndex": 0,
+      "explanation": "Too many changes means unclear cause.",
+      "tip": "One test question, one change."
+    }
+  },
+  {
+    "id": "science_4_6_06_living_nonliving",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "elimination",
+    "difficulty": "easy",
+    "title": "Living or Not",
+    "content": {
+      "story": "You are sorting objects for science class.",
+      "image": "/images/stories/community-help.svg",
+      "method": "Classification",
+      "evidence_note": "Using criteria supports accurate categorization.",
+      "debrief": "What rule helped you choose?",
+      "prompt": "Which item is living?",
+      "choices": [
+        "Worm",
+        "Rock",
+        "Toy car",
+        "Spoon"
+      ],
+      "correctIndex": 0,
+      "explanation": "A worm grows and needs food.",
+      "tip": "Living things grow and need resources."
+    }
+  },
+  {
+    "id": "science_4_6_07_pattern_height",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "pattern",
+    "difficulty": "easy",
+    "title": "Plant Pattern",
+    "content": {
+      "story": "Plant heights: 2 cm, 3 cm, 4 cm, 5 cm.",
+      "image": "/images/stories/park-path.svg",
+      "method": "Pattern reading",
+      "evidence_note": "Pattern recognition supports early data interpretation.",
+      "debrief": "How much did it grow each day?",
+      "prompt": "What is the best next height?",
+      "choices": [
+        "6 cm",
+        "3 cm",
+        "10 cm",
+        "1 cm"
+      ],
+      "correctIndex": 0,
+      "explanation": "The pattern grows by 1 each step.",
+      "tip": "Check how much changes each time."
+    }
+  },
+  {
+    "id": "science_4_6_08_odd_magnetic",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "elimination",
+    "difficulty": "easy",
+    "title": "Odd One Out",
+    "content": {
+      "story": "A magnet sticks to paper clip, nail, and can.",
+      "image": "/images/stories/kitchen-plan.svg",
+      "method": "Property reasoning",
+      "evidence_note": "Comparing properties helps reasoning by elimination.",
+      "debrief": "What property made one item different?",
+      "prompt": "Which item does not belong?",
+      "choices": [
+        "Rubber eraser",
+        "Paper clip",
+        "Nail",
+        "Metal can"
+      ],
+      "correctIndex": 0,
+      "explanation": "The eraser is not magnetic.",
+      "tip": "Find the item missing the shared property."
+    }
+  },
+  {
+    "id": "science_4_6_09_food_chain",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "easy",
+    "title": "Food Chain What If",
+    "content": {
+      "story": "Frogs eat insects.",
+      "image": "/images/stories/forest-trail.svg",
+      "method": "Systems thinking",
+      "evidence_note": "Simple system links build causal reasoning.",
+      "debrief": "What happened first in the chain?",
+      "prompt": "If insects decrease a lot, what may happen to frogs?",
+      "choices": [
+        "Frog numbers may decrease",
+        "Frog numbers always double",
+        "Frogs become plants",
+        "Nothing can ever change"
+      ],
+      "correctIndex": 0,
+      "explanation": "Less food can mean fewer frogs.",
+      "tip": "Follow the food connection."
+    }
+  },
+  {
+    "id": "science_4_6_10_source_check",
+    "age_band": "4-6",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "easy",
+    "title": "Who Is Reliable?",
+    "content": {
+      "story": "You need a science fact about planets.",
+      "image": "/images/stories/space-camp.svg",
+      "method": "Source credibility basics",
+      "evidence_note": "Early source checks reduce misinformation uptake.",
+      "debrief": "Why is this source more trustworthy?",
+      "prompt": "Which source is most reliable?",
+      "choices": [
+        "A science museum website",
+        "A random anonymous comment",
+        "A joke page with no author",
+        "A rumor from a game chat"
+      ],
+      "correctIndex": 0,
+      "explanation": "Science institutions provide reviewed information.",
+      "tip": "Choose sources with experts and clear names."
+    }
+  },
+  {
+    "id": "science_7_9_01_notice_infer",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "easy",
+    "title": "Observation or Inference",
+    "content": {
+      "story": "A plant near the window leans toward light.",
+      "image": "/images/stories/science-lab.svg",
+      "method": "Evidence distinction",
+      "evidence_note": "Distinguishing observation from inference improves claim quality.",
+      "debrief": "Which answer was directly observed, not guessed?",
+      "prompt": "Which statement is an inference?",
+      "choices": [
+        "The plant leans because it is growing toward light",
+        "The stem is bent toward the window",
+        "The leaves are green",
+        "The pot is on a shelf"
+      ],
+      "correctIndex": 0,
+      "explanation": "Inference explains why; observation reports what is seen.",
+      "tip": "Look for because-statements."
+    }
+  },
+  {
+    "id": "science_7_9_02_tool_match",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "easy",
+    "title": "Tool Match Challenge",
+    "content": {
+      "story": "You want to compare plant growth over one week.",
+      "image": "/images/stories/park-path.svg",
+      "method": "Method-tool alignment",
+      "evidence_note": "Correct tool selection improves measurement validity.",
+      "debrief": "What exactly does this tool measure?",
+      "prompt": "Best tool to measure growth?",
+      "choices": [
+        "Ruler",
+        "Stopwatch",
+        "Compass",
+        "Scale for mass only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Growth in height is measured with a ruler.",
+      "tip": "Match the unit to the question."
+    }
+  },
+  {
+    "id": "science_7_9_03_best_evidence",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "easy",
+    "title": "Best Evidence Pick",
+    "content": {
+      "story": "Question: Do plants need light to grow well?",
+      "image": "/images/stories/forest-trail.svg",
+      "method": "Claim-evidence reasoning",
+      "evidence_note": "Controlled comparison gives stronger evidence than anecdotes.",
+      "debrief": "Which variable was changed in the best test?",
+      "prompt": "Which evidence is strongest?",
+      "choices": [
+        "Two same plants: one light, one dark, same water",
+        "One plant looked happy today",
+        "My cousin says sunlight helps",
+        "A cartoon showed a big tree"
+      ],
+      "correctIndex": 0,
+      "explanation": "This uses a fair comparison with one key change.",
+      "tip": "Strong evidence compares fairly."
+    }
+  },
+  {
+    "id": "science_7_9_04_prediction_reason",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "easy",
+    "title": "Predict and Explain",
+    "content": {
+      "story": "An ice cube sits in sun and another in shade.",
+      "image": "/images/stories/ocean-route.svg",
+      "method": "Prediction + mechanism",
+      "evidence_note": "Predictions improve when tied to a causal mechanism.",
+      "debrief": "What mechanism explains your choice?",
+      "prompt": "Which prediction and reason fit science best?",
+      "choices": [
+        "Sun ice melts faster because it gets more heat",
+        "Shade ice melts faster because shade is bright",
+        "Both freeze because air exists",
+        "Neither changes because ice is cold"
+      ],
+      "correctIndex": 0,
+      "explanation": "More heat energy speeds melting.",
+      "tip": "Pair your prediction with a why."
+    }
+  },
+  {
+    "id": "science_7_9_05_fair_test_builder",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "sequencing",
+    "difficulty": "medium",
+    "title": "Fair Test Builder",
+    "content": {
+      "story": "You test which ramp surface makes a toy car go farthest.",
+      "image": "/images/stories/market-math.svg",
+      "method": "Variables control",
+      "evidence_note": "Fair tests control non-target variables.",
+      "debrief": "Which variable should change, and which stay the same?",
+      "prompt": "What should you keep the same?",
+      "choices": [
+        "Ramp height and car type",
+        "Surface and ramp height",
+        "Car type and measurement unit",
+        "Everything should change"
+      ],
+      "correctIndex": 0,
+      "explanation": "Keep other conditions fixed when testing one variable.",
+      "tip": "Change one thing, hold the rest."
+    }
+  },
+  {
+    "id": "science_7_9_06_one_change_only",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "sequencing",
+    "difficulty": "medium",
+    "title": "Too Many Changes",
+    "content": {
+      "story": "A group changed ramp height and wheel size together.",
+      "image": "/images/stories/team-strategy.svg",
+      "method": "Experimental design check",
+      "evidence_note": "Confounded variables weaken causal conclusions.",
+      "debrief": "How can they redesign to find one cause?",
+      "prompt": "Can they tell which change caused the result?",
+      "choices": [
+        "No, because two variables changed",
+        "Yes, because any result is enough",
+        "Yes, because bigger wheels are always faster",
+        "No, because experiments never work"
+      ],
+      "correctIndex": 0,
+      "explanation": "They need one variable change for a clear cause.",
+      "tip": "Avoid confounding changes."
+    }
+  },
+  {
+    "id": "science_7_9_07_graph_match",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "pattern",
+    "difficulty": "medium",
+    "title": "Graph Match",
+    "content": {
+      "story": "Temperature rises in morning, then drops at night.",
+      "image": "/images/stories/city-plan.svg",
+      "method": "Representation matching",
+      "evidence_note": "Matching narrative to graph strengthens data literacy.",
+      "debrief": "Which part of the graph matches the story turn?",
+      "prompt": "Which graph shape fits best?",
+      "choices": [
+        "Up then down",
+        "Down then up",
+        "Flat all day",
+        "Random jumps only"
+      ],
+      "correctIndex": 0,
+      "explanation": "The story says increase followed by decrease.",
+      "tip": "Map each sentence to graph direction."
+    }
+  },
+  {
+    "id": "science_7_9_08_data_enough",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "medium",
+    "title": "Enough Data?",
+    "content": {
+      "story": "A test was done once on one day.",
+      "image": "/images/stories/library-riddle.svg",
+      "method": "Sample-size awareness",
+      "evidence_note": "Repeated trials improve reliability and reduce overgeneralization.",
+      "debrief": "What extra data would make this claim stronger?",
+      "prompt": "Can we claim it is always true?",
+      "choices": [
+        "No, we need more trials",
+        "Yes, one trial proves all",
+        "Yes, because it sounded right",
+        "No, because science avoids data"
+      ],
+      "correctIndex": 0,
+      "explanation": "One trial is not enough for broad claims.",
+      "tip": "Ask: How many tests did we run?"
+    }
+  },
+  {
+    "id": "science_7_9_09_cer_mini",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "evidence",
+    "difficulty": "medium",
+    "title": "CER Mini",
+    "content": {
+      "story": "Claim: Plants need light for healthy growth.",
+      "image": "/images/stories/science-lab.svg",
+      "method": "CER selection",
+      "evidence_note": "Claim-Evidence-Reasoning structure supports clear scientific argumentation.",
+      "debrief": "How does your evidence support the claim?",
+      "prompt": "Which evidence best supports the claim?",
+      "choices": [
+        "Plant with light grew 6 cm; dark plant grew 1 cm",
+        "Plants are pretty",
+        "I like sunny days",
+        "Green is my favorite color"
+      ],
+      "correctIndex": 0,
+      "explanation": "This directly compares growth outcomes.",
+      "tip": "Pick evidence linked to the claim."
+    }
+  },
+  {
+    "id": "science_7_9_10_source_check_kids",
+    "age_band": "7-9",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "medium",
+    "title": "Source Check for Kids",
+    "content": {
+      "story": "You need facts about volcanoes.",
+      "image": "/images/stories/space-camp.svg",
+      "method": "Credibility basics",
+      "evidence_note": "Simple source criteria improve information quality decisions.",
+      "debrief": "What made this source more trustworthy?",
+      "prompt": "Which source is most reliable?",
+      "choices": [
+        "National science museum page with named experts",
+        "Anonymous meme account",
+        "Random comment with no link",
+        "A post that says trust me"
+      ],
+      "correctIndex": 0,
+      "explanation": "Named experts and institutions improve reliability.",
+      "tip": "Check who wrote it and where it comes from."
+    }
+  },
+  {
+    "id": "science_10_13_01_engineering_boat",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "medium",
+    "title": "Boat Build Iteration",
+    "content": {
+      "story": "Your first paper boat sinks at 6 pennies. Goal is 10 pennies.",
+      "image": "/images/stories/ocean-route.svg",
+      "method": "Engineering iteration",
+      "evidence_note": "Iterative testing with measured outcomes improves design reasoning.",
+      "debrief": "What single design change would you test next?",
+      "prompt": "Best next change?",
+      "choices": [
+        "Wider base and same material",
+        "Change material and size and shape at once",
+        "Use fewer pennies and claim success",
+        "Skip retest and guess"
+      ],
+      "correctIndex": 0,
+      "explanation": "A wider base can improve stability while isolating one main change.",
+      "tip": "Iterate one meaningful change at a time."
+    }
+  },
+  {
+    "id": "science_10_13_02_bridge_strength",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "elimination",
+    "difficulty": "medium",
+    "title": "Bridge Strength Tradeoff",
+    "content": {
+      "story": "A paper bridge fails under load.",
+      "image": "/images/stories/city-plan.svg",
+      "method": "Constraint reasoning",
+      "evidence_note": "Engineering tasks build reasoning around tradeoffs and constraints.",
+      "debrief": "Why is this design change likely stronger?",
+      "prompt": "Which change most likely increases strength?",
+      "choices": [
+        "Add triangle supports",
+        "Remove supports for speed",
+        "Make span longer with same thickness",
+        "Ignore failure and retest unchanged"
+      ],
+      "correctIndex": 0,
+      "explanation": "Triangulation increases structural stability.",
+      "tip": "Choose changes tied to load paths."
+    }
+  },
+  {
+    "id": "science_10_13_03_misinformation_kidsafe",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "source-check",
+    "difficulty": "medium",
+    "title": "Science Claim Check",
+    "content": {
+      "story": "Claim: Plants grow faster with music.",
+      "image": "/images/stories/community-help.svg",
+      "method": "Question quality",
+      "evidence_note": "Asking for controls and sample size improves claim evaluation.",
+      "debrief": "What test detail matters most before believing the claim?",
+      "prompt": "What info do you need first?",
+      "choices": [
+        "Control group and number of plants",
+        "The song title only",
+        "The loudest speaker",
+        "The prettiest plant photo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Good evidence needs controls and adequate sample size.",
+      "tip": "Ask: compared to what, and how many samples?"
+    }
+  },
+  {
+    "id": "science_10_13_04_adaptation_match",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "cause-effect",
+    "difficulty": "easy",
+    "title": "Adaptation Match",
+    "content": {
+      "story": "Polar bear adaptation question.",
+      "image": "/images/stories/forest-trail.svg",
+      "method": "Function reasoning",
+      "evidence_note": "Matching structure to function supports explanatory thinking.",
+      "debrief": "How does this trait help survival?",
+      "prompt": "Why does a polar bear have thick fur?",
+      "choices": [
+        "Insulation in cold environments",
+        "To run faster than fish",
+        "To breathe underwater",
+        "To attract lightning"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thick fur helps reduce heat loss.",
+      "tip": "Connect trait to environmental need."
+    }
+  },
+  {
+    "id": "science_10_13_05_rock_mineral_fossil",
+    "age_band": "10-13",
+    "type": "logic_game",
+    "skill": "elimination",
+    "difficulty": "medium",
+    "title": "Classify with Evidence",
+    "content": {
+      "story": "You find an object with a shell imprint in stone.",
+      "image": "/images/stories/library-riddle.svg",
+      "method": "Classification under uncertainty",
+      "evidence_note": "Classification improves when tied to evidence and uncertainty handling.",
+      "debrief": "What evidence points to your category?",
+      "prompt": "Best classification?",
+      "choices": [
+        "Fossil",
+        "Mineral crystal",
+        "Igneous rock only",
+        "Unknown because no evidence matters"
+      ],
+      "correctIndex": 0,
+      "explanation": "A preserved imprint of life is fossil evidence.",
+      "tip": "Use defining features, not guesses."
+    }
+  }
+]

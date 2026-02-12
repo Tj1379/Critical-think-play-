@@ -1,0 +1,122 @@
+[
+  {
+    "id": "tk1",
+    "age_band": "4-6",
+    "type": "game",
+    "skill": "observation",
+    "difficulty": "easy",
+    "title": "Notice or Guess?",
+    "content": {
+      "story": "You are a science detective looking at a puddle on the ground.",
+      "image": "/images/stories/forest-trail.svg",
+      "method": "Observation vs inference",
+      "evidence_note": "Observation means reporting what you can directly sense.",
+      "debrief": "Which answer was a direct observation, not a guess?",
+      "prompt": "You see a puddle on the ground. Which is something you can NOTICE?",
+      "choices": [
+        "The ground is wet",
+        "It rained last night",
+        "Someone spilled water"
+      ],
+      "correctIndex": 0,
+      "explanation": "You can see the ground is wet. The other answers are guesses.",
+      "tip": "Observations are things you can see, hear, or touch."
+    }
+  },
+  {
+    "id": "tk2",
+    "age_band": "4-6",
+    "type": "game",
+    "skill": "cause_effect",
+    "difficulty": "easy",
+    "title": "What Happens Next?",
+    "content": {
+      "story": "An ice cube sits outside in the warm sun.",
+      "image": "/images/stories/ocean-route.svg",
+      "method": "Cause and effect",
+      "evidence_note": "Heat causes state changes in materials like ice.",
+      "debrief": "What caused the change in the ice?",
+      "prompt": "An ice cube is left in the sun. What will happen?",
+      "choices": [
+        "It melts",
+        "It grows bigger",
+        "It turns into a rock"
+      ],
+      "correctIndex": 0,
+      "explanation": "Heat from the sun makes ice melt.",
+      "tip": "Think about what heat does to cold things."
+    }
+  },
+  {
+    "id": "tk3",
+    "age_band": "4-6",
+    "type": "game",
+    "skill": "classification",
+    "difficulty": "easy",
+    "title": "Living or Not?",
+    "content": {
+      "story": "You are sorting items into living and nonliving groups.",
+      "image": "/images/stories/community-help.svg",
+      "method": "Classification",
+      "evidence_note": "Living things grow and need resources.",
+      "debrief": "What feature told you it was living?",
+      "prompt": "Which one is living?",
+      "choices": [
+        "A rock",
+        "A worm",
+        "A shoe"
+      ],
+      "correctIndex": 1,
+      "explanation": "A worm grows and needs food. Rocks and shoes do not.",
+      "tip": "Living things grow and need food."
+    }
+  },
+  {
+    "id": "tk4",
+    "age_band": "4-6",
+    "type": "game",
+    "skill": "tools",
+    "difficulty": "easy",
+    "title": "Pick the Tool",
+    "content": {
+      "story": "You need to look at tiny details in a science sample.",
+      "image": "/images/stories/science-lab.svg",
+      "method": "Tool selection",
+      "evidence_note": "Choosing the right scientific tool improves observations.",
+      "debrief": "Why is that tool the best fit for this question?",
+      "prompt": "What tool helps you see tiny things?",
+      "choices": [
+        "Microscope",
+        "Ruler",
+        "Scale"
+      ],
+      "correctIndex": 0,
+      "explanation": "A microscope helps you see small things.",
+      "tip": "Different tools help us answer different questions."
+    }
+  },
+  {
+    "id": "tk5",
+    "age_band": "4-6",
+    "type": "game",
+    "skill": "prediction",
+    "difficulty": "easy",
+    "title": "Shadow Time",
+    "content": {
+      "story": "You stand outside and watch your shadow during the day.",
+      "image": "/images/stories/park-path.svg",
+      "method": "Prediction",
+      "evidence_note": "Sun position changes shadow direction and length.",
+      "debrief": "How could you test this again later today?",
+      "prompt": "When the sun moves, what happens to your shadow?",
+      "choices": [
+        "It moves",
+        "It disappears forever",
+        "It grows legs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Shadows change when the sun moves.",
+      "tip": "Look at patterns during the day."
+    }
+  }
+]

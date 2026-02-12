@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Forest trail">
+  <rect width="1200" height="700" fill="#d8f2dc"/>
+  <rect x="0" y="520" width="1200" height="180" fill="#9fcf9f"/>
+  <rect x="80" y="210" width="70" height="310" fill="#6b4e3d"/>
+  <rect x="280" y="180" width="80" height="340" fill="#6b4e3d"/>
+  <rect x="520" y="200" width="75" height="320" fill="#6b4e3d"/>
+  <rect x="760" y="170" width="85" height="350" fill="#6b4e3d"/>
+  <rect x="980" y="210" width="70" height="310" fill="#6b4e3d"/>
+  <circle cx="115" cy="170" r="85" fill="#4caf70"/>
+  <circle cx="320" cy="140" r="95" fill="#4caf70"/>
+  <circle cx="560" cy="160" r="90" fill="#4caf70"/>
+  <circle cx="803" cy="130" r="100" fill="#4caf70"/>
+  <circle cx="1015" cy="170" r="82" fill="#4caf70"/>
+  <text x="80" y="90" font-size="52" fill="#2b6a3a" font-family="Arial">Forest Trail Clues</text>
+</svg>

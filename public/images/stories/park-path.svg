@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Park path">
+  <rect width="1200" height="700" fill="#dff7ee"/>
+  <circle cx="980" cy="120" r="70" fill="#ffe9a8"/>
+  <rect x="0" y="460" width="1200" height="240" fill="#9cd4a8"/>
+  <path d="M220 700 C260 570, 420 500, 640 700" fill="#f2d2a0"/>
+  <text x="70" y="90" font-size="56" fill="#1f9d72" font-family="Arial">Park Path Story</text>
+</svg>

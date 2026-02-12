@@ -1,0 +1,121 @@
+[
+  {
+    "id": "g1_1",
+    "age_band": "7-9",
+    "type": "game",
+    "skill": "fair_test",
+    "difficulty": "medium",
+    "title": "Fair Test Builder",
+    "content": {
+      "story": "You are comparing two paper towels to see which absorbs more water.",
+      "image": "/images/stories/science-lab.svg",
+      "method": "Fair test",
+      "evidence_note": "Fair tests control variables so results are comparable.",
+      "debrief": "Which variable did you keep constant, and which one changed?",
+      "prompt": "You test which paper towel absorbs more water. What should stay the SAME?",
+      "choices": [
+        "Amount of water",
+        "Type of towel",
+        "How hard you squeeze"
+      ],
+      "correctIndex": 0,
+      "explanation": "To compare fairly, only change one thing.",
+      "tip": "Keep everything the same except one change."
+    }
+  },
+  {
+    "id": "g1_2",
+    "age_band": "7-9",
+    "type": "game",
+    "skill": "evidence",
+    "difficulty": "medium",
+    "title": "Best Evidence",
+    "content": {
+      "story": "You are testing whether plants need light.",
+      "image": "/images/stories/forest-trail.svg",
+      "method": "Evidence quality",
+      "evidence_note": "Comparative evidence is stronger than a single observation or opinion.",
+      "debrief": "Why is a comparison stronger than one example?",
+      "prompt": "Which is the BEST evidence that plants need light?",
+      "choices": [
+        "One plant grew in sunlight",
+        "Two plants tested, only the sunny one grew",
+        "My friend says so"
+      ],
+      "correctIndex": 1,
+      "explanation": "Comparing two plants gives stronger evidence.",
+      "tip": "Good evidence compares results."
+    }
+  },
+  {
+    "id": "g1_3",
+    "age_band": "7-9",
+    "type": "game",
+    "skill": "pattern",
+    "difficulty": "medium",
+    "title": "Spot the Pattern",
+    "content": {
+      "story": "You record plant height each day and notice changes.",
+      "image": "/images/stories/park-path.svg",
+      "method": "Pattern reading",
+      "evidence_note": "Tracking data over time helps identify growth patterns.",
+      "debrief": "What trend did you see over time?",
+      "prompt": "A plant grows taller each day. What is the pattern?",
+      "choices": [
+        "It is shrinking",
+        "It is growing",
+        "It stays the same"
+      ],
+      "correctIndex": 1,
+      "explanation": "If it gets taller, it is growing.",
+      "tip": "Look for changes over time."
+    }
+  },
+  {
+    "id": "g1_4",
+    "age_band": "7-9",
+    "type": "game",
+    "skill": "cause_effect",
+    "difficulty": "medium",
+    "title": "Food Chain",
+    "content": {
+      "story": "Frogs eat insects in a food chain.",
+      "image": "/images/stories/community-help.svg",
+      "method": "Cause and effect",
+      "evidence_note": "Food-chain links support systems-level reasoning.",
+      "debrief": "What happens when a food source decreases?",
+      "prompt": "If insects disappear, what happens to frogs?",
+      "choices": [
+        "More frogs",
+        "Fewer frogs",
+        "Nothing changes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Frogs eat insects. Less food means fewer frogs.",
+      "tip": "Think about who eats what."
+    }
+  },
+  {
+    "id": "g1_5",
+    "age_band": "7-9",
+    "type": "game",
+    "skill": "observation_vs_inference",
+    "difficulty": "medium",
+    "title": "Science Detective",
+    "content": {
+      "story": "You look up and see a dark sky before going outside.",
+      "image": "/images/stories/ocean-route.svg",
+      "method": "Observation vs inference",
+      "evidence_note": "Inference statements go beyond direct observation.",
+      "debrief": "What part is observed, and what part is inferred?",
+      "prompt": "The sky is dark. 'It will rain soon.' Is that an observation or inference?",
+      "choices": [
+        "Observation",
+        "Inference"
+      ],
+      "correctIndex": 1,
+      "explanation": "Rain is a guess based on the dark sky.",
+      "tip": "Inferences are smart guesses."
+    }
+  }
+]

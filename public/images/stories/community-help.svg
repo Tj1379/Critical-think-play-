@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Community help board">
+  <rect width="1200" height="700" fill="#eefaf5"/>
+  <rect x="140" y="130" width="920" height="460" rx="20" fill="#cceedd"/>
+  <rect x="220" y="210" width="220" height="120" fill="#8ad1b4"/>
+  <rect x="500" y="210" width="220" height="120" fill="#f9d089"/>
+  <rect x="780" y="210" width="220" height="120" fill="#f8a1b2"/>
+  <rect x="220" y="370" width="220" height="120" fill="#9dc8ff"/>
+  <rect x="500" y="370" width="220" height="120" fill="#d3b3ff"/>
+  <rect x="780" y="370" width="220" height="120" fill="#9be0b7"/>
+  <text x="80" y="95" font-size="52" fill="#2d6e57" font-family="Arial">Community Logic Board</text>
+</svg>

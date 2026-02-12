@@ -1,0 +1,164 @@
+[
+  {
+    "id": "session_warmup_interpret_7_9",
+    "age_band": "7-9",
+    "type": "warmup",
+    "skill": "interpret",
+    "difficulty": "easy",
+    "title": "Warmup Clue Check",
+    "content": {
+      "ct_skill": "interpret",
+      "mode": "warmup",
+      "story": "A student sees wet footprints near a sink.",
+      "image": "/images/stories/kitchen-plan.svg",
+      "method": "Observation warmup",
+      "evidence_note": "Warmup items prime quick retrieval and confidence.",
+      "debrief": "What was directly observed?",
+      "prompt": "Which choice is an observation?",
+      "choices": [
+        "Footprints are wet",
+        "Someone ran very fast",
+        "A storm happened",
+        "The floor was cleaned yesterday"
+      ],
+      "correctIndex": 0,
+      "explanation": "Wet footprints are directly observable.",
+      "tip": "Start with what you can verify immediately."
+    }
+  },
+  {
+    "id": "session_main_analyze_10_13",
+    "age_band": "10-13",
+    "type": "main",
+    "skill": "analyze",
+    "difficulty": "medium",
+    "title": "Main Challenge: Fair Variables",
+    "content": {
+      "ct_skill": "analyze",
+      "mode": "main",
+      "story": "A team compares two rocket designs.",
+      "image": "/images/stories/space-camp.svg",
+      "method": "Main variable analysis",
+      "evidence_note": "Main tasks build deeper transfer with explicit analysis.",
+      "debrief": "Which variable must stay fixed?",
+      "prompt": "For a fair test, what should stay the same?",
+      "choices": [
+        "Launch force",
+        "Rocket shape and launch force",
+        "Everything",
+        "Nothing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Only one variable should change in a fair comparison.",
+      "tip": "List variables and lock all but one."
+    }
+  },
+  {
+    "id": "session_boss_evaluate_10_13",
+    "age_band": "10-13",
+    "type": "boss",
+    "skill": "evaluate",
+    "difficulty": "hard",
+    "title": "Boss: Evidence Showdown",
+    "content": {
+      "ct_skill": "evaluate",
+      "mode": "boss",
+      "story": "Two teams present competing claims about a new study.",
+      "image": "/images/stories/team-strategy.svg",
+      "method": "Boss evidence weighting",
+      "evidence_note": "Boss tasks increase challenge while staying attainable.",
+      "debrief": "Which evidence source was strongest and why?",
+      "prompt": "Which source is strongest evidence?",
+      "choices": [
+        "Controlled trial with clear sample details",
+        "Anonymous post with no data",
+        "Single opinion video",
+        "Reposted screenshot with no citation"
+      ],
+      "correctIndex": 0,
+      "explanation": "Controlled trials with clear methods are strongest.",
+      "tip": "Check method quality before trusting conclusions."
+    }
+  },
+  {
+    "id": "session_review_infer_7_9",
+    "age_band": "7-9",
+    "type": "review",
+    "skill": "infer",
+    "difficulty": "medium",
+    "title": "Review: Cause Link",
+    "content": {
+      "ct_skill": "infer",
+      "mode": "review",
+      "story": "A food chain map shows fewer insects this season.",
+      "image": "/images/stories/forest-trail.svg",
+      "method": "Retrieval review",
+      "evidence_note": "Spaced review strengthens retention over time.",
+      "debrief": "What evidence supports your inference?",
+      "prompt": "What is the most likely change next?",
+      "choices": [
+        "Frog population decreases",
+        "Frogs become plants",
+        "No species ever changes",
+        "Insect count doubles instantly"
+      ],
+      "correctIndex": 0,
+      "explanation": "Less prey usually reduces predator numbers.",
+      "tip": "Trace the system link step by step."
+    }
+  },
+  {
+    "id": "session_main_explain_14_18",
+    "age_band": "14-18",
+    "type": "main",
+    "skill": "explain",
+    "difficulty": "medium",
+    "title": "Main: CER Connector",
+    "content": {
+      "ct_skill": "explain",
+      "mode": "main",
+      "story": "A class must justify a recommendation to the school board.",
+      "image": "/images/stories/community-help.svg",
+      "method": "Claim-Evidence-Reasoning",
+      "evidence_note": "Structured explanation improves transfer to argument quality.",
+      "debrief": "How did your evidence support your claim?",
+      "prompt": "Which statement best connects claim and evidence?",
+      "choices": [
+        "The data supports the claim because both trend and control align",
+        "The claim sounds good so it is true",
+        "The chart is colorful so it is correct",
+        "A friend agrees so no evidence is needed"
+      ],
+      "correctIndex": 0,
+      "explanation": "Strong explanations explicitly connect evidence to the claim.",
+      "tip": "Say how each evidence point supports the claim."
+    }
+  },
+  {
+    "id": "session_boss_self_regulate_adult",
+    "age_band": "adult",
+    "type": "boss",
+    "skill": "self_regulate",
+    "difficulty": "hard",
+    "title": "Boss: Strategy Audit",
+    "content": {
+      "ct_skill": "self_regulate",
+      "mode": "boss",
+      "story": "You must choose a policy under uncertainty and time pressure.",
+      "image": "/images/stories/city-plan.svg",
+      "method": "Metacognitive check",
+      "evidence_note": "Self-regulation supports adaptive transfer and error correction.",
+      "debrief": "What assumption needs verification before final decision?",
+      "prompt": "Which next step shows strong self-regulation?",
+      "choices": [
+        "Identify missing evidence and test assumptions",
+        "Finalize quickly without checks",
+        "Ignore conflicting data",
+        "Pick the easiest option to explain"
+      ],
+      "correctIndex": 0,
+      "explanation": "Self-regulation means auditing assumptions and correcting gaps.",
+      "tip": "Pause, identify blind spots, then revise strategy."
+    }
+  }
+]

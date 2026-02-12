@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Science lab">
+  <rect width="1200" height="700" fill="#e8f0ff"/>
+  <rect x="90" y="520" width="1020" height="120" fill="#c7d6f5"/>
+  <rect x="180" y="260" width="130" height="260" rx="20" fill="#8db4ff"/>
+  <rect x="380" y="220" width="150" height="300" rx="20" fill="#98e2c6"/>
+  <rect x="620" y="300" width="150" height="220" rx="20" fill="#ffc9de"/>
+  <rect x="850" y="240" width="170" height="280" rx="20" fill="#ffd684"/>
+  <text x="70" y="120" font-size="56" fill="#385e99" font-family="Arial">Lab Logic Game</text>
+</svg>

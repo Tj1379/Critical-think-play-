@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Market stands">
+  <rect width="1200" height="700" fill="#fff4cf"/>
+  <rect x="100" y="240" width="280" height="260" fill="#ffcf9f"/>
+  <rect x="460" y="240" width="280" height="260" fill="#ffb7b2"/>
+  <rect x="820" y="240" width="280" height="260" fill="#b6d7ff"/>
+  <rect x="100" y="200" width="280" height="40" fill="#ff8f70"/>
+  <rect x="460" y="200" width="280" height="40" fill="#ff6b81"/>
+  <rect x="820" y="200" width="280" height="40" fill="#5f9df7"/>
+  <text x="80" y="120" font-size="56" fill="#c95f2f" font-family="Arial">Market Challenge</text>
+</svg>
