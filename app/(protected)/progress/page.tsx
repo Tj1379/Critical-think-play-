@@ -88,7 +88,15 @@ export default function ProgressPage() {
   return (
     <section className="space-y-4">
       <article className="rounded-3xl bg-white/90 p-5 shadow-sm">
-        <h2 className="text-xl font-black text-ink">{activeChild.name}&apos;s Growth</h2>
+        <div className="flex items-start justify-between gap-3">
+          <h2 className="text-xl font-black text-ink">{activeChild.name}&apos;s Growth</h2>
+          <button
+            className="rounded-xl bg-ink px-3 py-2 text-xs font-semibold text-white"
+            onClick={() => router.push(`/weekly?child=${activeChild.id}`)}
+          >
+            Weekly Report
+          </button>
+        </div>
         <div className="mt-4 grid grid-cols-2 gap-3 text-center">
           <div className="rounded-2xl bg-mint p-3">
             <p className="text-xs font-semibold uppercase text-ink/70">Streak</p>

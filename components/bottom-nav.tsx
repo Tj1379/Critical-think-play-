@@ -7,6 +7,7 @@ const links = [
   { href: "/play", label: "Play" },
   { href: "/skills", label: "Skill Tree" },
   { href: "/progress", label: "Progress" },
+  { href: "/weekly", label: "Weekly" },
   { href: "/profiles", label: "Profiles" }
 ];
 
@@ -25,7 +26,7 @@ export function BottomNav() {
             <li key={link.href}>
               <Link
                 href={href}
-                className={`rounded-full px-4 py-2 text-sm font-semibold ${
+                className={`rounded-full px-3 py-2 text-xs font-semibold sm:px-4 sm:text-sm ${
                   active ? "bg-leaf text-white" : "bg-mint text-ink"
                 }`}
               >

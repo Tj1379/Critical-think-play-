@@ -26,6 +26,52 @@ export type AdaptiveRound = {
   plan: NextItemPlan;
 };
 
+export type DailyQuestState = {
+  childId: string;
+  date: string;
+  roundsToday: number;
+  dailyGoal: number;
+  progressPercent: number;
+  dueReviews: number;
+  weakestSkills: CtSkill[];
+  completed: {
+    warmup: boolean;
+    mainCount: number;
+    boss: boolean;
+  };
+  remainingSteps: SessionStep[];
+  isComplete: boolean;
+};
+
+export type WeeklyReport = {
+  childId: string;
+  range: {
+    from: string;
+    to: string;
+  };
+  roundsThisWeek: number;
+  sessionsThisWeek: number;
+  firstTryAccuracy: number;
+  masteryAccuracy: number;
+  strategyRecoveries: number;
+  streak: number;
+  daily: Array<{
+    date: string;
+    rounds: number;
+    firstTryAccuracy: number;
+  }>;
+  skillTrends: Array<{
+    skill: CtSkill;
+    label: string;
+    attempts: number;
+    accuracy: number;
+    deltaVsLastWeek: number;
+  }>;
+  wins: string[];
+  focusSkill: CtSkill;
+  coachNotes: string[];
+};
+
 export const DEFAULT_ADAPTIVE_SETTINGS = {
   main_rounds: 1,
   boss_enabled: true,
@@ -105,6 +151,56 @@ function isPlayableActivity(activity: Activity): boolean {
 
 function buildDifficultyDistance(activity: Activity, targetDifficulty: number): number {
   return Math.abs(difficultyToLevel(activity.difficulty) - targetDifficulty);
+}
+
+function getDayRange(date: Date): { startIso: string; endIso: string; key: string } {
+  const start = new Date(date);
+  start.setHours(0, 0, 0, 0);
+  const end = new Date(start);
+  end.setDate(end.getDate() + 1);
+  const key = start.toISOString().slice(0, 10);
+  return {
+    startIso: start.toISOString(),
+    endIso: end.toISOString(),
+    key
+  };
+}
+
+function getAttemptMeta(
+  answer: unknown,
+  activitySkillMap: Map<string, CtSkill>,
+  activityId: string
+): {
+  attemptNumber: 1 | 2;
+  sessionMode: SessionMode;
+  skill: CtSkill;
+} {
+  const parsed = (answer ?? {}) as {
+    attemptNumber?: number;
+    sessionMode?: string;
+    skill?: string;
+  };
+  const attemptNumber = parsed.attemptNumber === 2 ? 2 : 1;
+  const mode = parsed.sessionMode;
+  const sessionMode: SessionMode =
+    mode === "warmup" || mode === "main" || mode === "boss" || mode === "review" ? mode : "main";
+  const skill = parsed.skill ? normalizeSkill(parsed.skill) : activitySkillMap.get(activityId) ?? "interpret";
+
+  return {
+    attemptNumber,
+    sessionMode,
+    skill
+  };
+}
+
+function weekRangeDays(now: Date): Array<{ key: string; startIso: string; endIso: string }> {
+  const days: Array<{ key: string; startIso: string; endIso: string }> = [];
+  for (let offset = 6; offset >= 0; offset -= 1) {
+    const day = new Date(now);
+    day.setDate(now.getDate() - offset);
+    days.push(getDayRange(day));
+  }
+  return days;
 }
 
 async function ensureSkillRows(childId: string): Promise<void> {
@@ -377,6 +473,97 @@ export async function updateChildAdaptiveSettings(
   }
 
   return data as ChildAdaptiveSettings;
+}
+
+export async function getDailyQuestState(
+  childId: string,
+  adaptiveSettings?: Partial<Pick<ChildAdaptiveSettings, "daily_goal" | "boss_enabled">>
+): Promise<DailyQuestState> {
+  const supabase = getSupabaseBrowserClient() as any;
+  const todayRange = getDayRange(new Date());
+
+  const [review, skillRowsRes, attemptsRes] = await Promise.all([
+    dueReviewSummary(childId),
+    getChildSkillStates(childId),
+    supabase
+      .from("attempts")
+      .select("activity_id,created_at,answer,is_correct")
+      .eq("child_id", childId)
+      .gte("created_at", todayRange.startIso)
+      .lt("created_at", todayRange.endIso)
+      .order("created_at", { ascending: true })
+  ]);
+
+  const attemptsError = attemptsRes.error as unknown;
+  if (attemptsError && !isMissingRelationError(attemptsError)) throw attemptsError;
+
+  const attempts = (attemptsRes.data ?? []) as Array<{
+    activity_id: string;
+    created_at: string;
+    is_correct: boolean;
+    answer: unknown;
+  }>;
+
+  const activityIds = Array.from(new Set(attempts.map((item) => item.activity_id)));
+  const { data: activityRows, error: activityError } =
+    activityIds.length > 0
+      ? await supabase.from("activities").select("id,skill,content").in("id", activityIds)
+      : { data: [], error: null };
+
+  if (activityError) throw activityError;
+
+  const activitySkillMap = new Map<string, CtSkill>();
+  (activityRows ?? []).forEach((row: { id: string; skill: string; content?: { ct_skill?: CtSkill } }) => {
+    activitySkillMap.set(row.id, row.content?.ct_skill ?? normalizeSkill(row.skill));
+  });
+
+  const firstAttempts = attempts.filter((attempt) => {
+    const meta = getAttemptMeta(attempt.answer, activitySkillMap, attempt.activity_id);
+    return meta.attemptNumber === 1;
+  });
+
+  let warmupDone = false;
+  let mainCount = 0;
+  let bossDone = false;
+
+  firstAttempts.forEach((attempt) => {
+    const meta = getAttemptMeta(attempt.answer, activitySkillMap, attempt.activity_id);
+    if (meta.sessionMode === "warmup") warmupDone = true;
+    if (meta.sessionMode === "main" || meta.sessionMode === "review") mainCount += 1;
+    if (meta.sessionMode === "boss") bossDone = true;
+  });
+
+  const weakestSkills = [...skillRowsRes]
+    .sort((a, b) => a.mastery_score - b.mastery_score)
+    .slice(0, 2)
+    .map((row) => row.skill);
+
+  const remainingSteps: SessionStep[] = [];
+  if (!warmupDone) remainingSteps.push("warmup");
+  const remainingMain = Math.max(0, 2 - mainCount);
+  for (let i = 0; i < remainingMain; i += 1) remainingSteps.push("main");
+  if ((adaptiveSettings?.boss_enabled ?? true) && !bossDone) remainingSteps.push("boss");
+
+  const dailyGoal = Math.max(1, Math.min(10, adaptiveSettings?.daily_goal ?? DEFAULT_ADAPTIVE_SETTINGS.daily_goal));
+  const roundsToday = firstAttempts.length;
+  const progressPercent = Math.min(100, Math.round((Math.min(roundsToday, dailyGoal) / dailyGoal) * 100));
+
+  return {
+    childId,
+    date: todayRange.key,
+    roundsToday,
+    dailyGoal,
+    progressPercent,
+    dueReviews: review.dueReviewCount,
+    weakestSkills,
+    completed: {
+      warmup: warmupDone,
+      mainCount,
+      boss: bossDone
+    },
+    remainingSteps,
+    isComplete: remainingSteps.length === 0
+  };
 }
 
 export async function getActivityForAgeBand(ageBand: string, excludeActivityId?: string): Promise<Activity | null> {
@@ -884,6 +1071,159 @@ export async function getChildProgress(childId: string) {
       masteryScore: row.mastery_score,
       xp: row.xp
     }))
+  };
+}
+
+export async function getChildWeeklyReport(childId: string): Promise<WeeklyReport> {
+  const supabase = getSupabaseBrowserClient() as any;
+  const now = new Date();
+  const thisWeek = weekRangeDays(now);
+  const thisWeekStart = thisWeek[0]?.startIso ?? getDayRange(now).startIso;
+
+  const previousWeekAnchor = new Date(now);
+  previousWeekAnchor.setDate(now.getDate() - 7);
+  const prevWeek = weekRangeDays(previousWeekAnchor);
+  const prevWeekStart = prevWeek[0]?.startIso ?? getDayRange(previousWeekAnchor).startIso;
+  const thisWeekEnd = thisWeek[thisWeek.length - 1]?.endIso ?? getDayRange(now).endIso;
+
+  const [{ data: attemptsRows, error: attemptsError }, { data: streakRow, error: streakError }] = await Promise.all([
+    supabase
+      .from("attempts")
+      .select("activity_id,is_correct,created_at,answer")
+      .eq("child_id", childId)
+      .gte("created_at", prevWeekStart)
+      .lt("created_at", thisWeekEnd)
+      .order("created_at", { ascending: true }),
+    supabase.from("streaks").select("current_streak").eq("child_id", childId).maybeSingle()
+  ]);
+
+  if (attemptsError) throw attemptsError;
+  if (streakError) throw streakError;
+
+  const typedAttempts = (attemptsRows ?? []) as Array<{
+    activity_id: string;
+    is_correct: boolean;
+    created_at: string;
+    answer: unknown;
+  }>;
+
+  const activityIds = Array.from(new Set(typedAttempts.map((item) => item.activity_id)));
+  const { data: activityRows, error: activityError } =
+    activityIds.length > 0
+      ? await supabase.from("activities").select("id,skill,content").in("id", activityIds)
+      : { data: [], error: null };
+
+  if (activityError) throw activityError;
+
+  const activitySkillMap = new Map<string, CtSkill>();
+  (activityRows ?? []).forEach((row: { id: string; skill: string; content?: { ct_skill?: CtSkill } }) => {
+    activitySkillMap.set(row.id, row.content?.ct_skill ?? normalizeSkill(row.skill));
+  });
+
+  const thisWeekAttempts = typedAttempts.filter((item) => item.created_at >= thisWeekStart && item.created_at < thisWeekEnd);
+  const prevWeekAttempts = typedAttempts.filter((item) => item.created_at >= prevWeekStart && item.created_at < thisWeekStart);
+
+  function summarizeBucket(rows: typeof typedAttempts) {
+    const firstAttempts = rows.filter((item) => getAttemptMeta(item.answer, activitySkillMap, item.activity_id).attemptNumber === 1);
+    const recoveryWins = rows.filter((item) => {
+      const meta = getAttemptMeta(item.answer, activitySkillMap, item.activity_id);
+      return meta.attemptNumber === 2 && item.is_correct;
+    }).length;
+
+    const rounds = firstAttempts.length;
+    const sessions = new Set(firstAttempts.map((item) => item.created_at.slice(0, 10))).size;
+    const firstTryCorrect = firstAttempts.filter((item) => item.is_correct).length;
+    const firstTryAccuracy = rounds > 0 ? Math.round((firstTryCorrect / rounds) * 100) : 0;
+    const masteryCorrect = Math.min(rounds, firstTryCorrect + recoveryWins);
+    const masteryAccuracy = rounds > 0 ? Math.round((masteryCorrect / rounds) * 100) : 0;
+
+    const bySkill = new Map<CtSkill, { attempts: number; correct: number }>();
+    firstAttempts.forEach((item) => {
+      const meta = getAttemptMeta(item.answer, activitySkillMap, item.activity_id);
+      const bucket = bySkill.get(meta.skill) ?? { attempts: 0, correct: 0 };
+      bucket.attempts += 1;
+      if (item.is_correct) bucket.correct += 1;
+      bySkill.set(meta.skill, bucket);
+    });
+
+    return {
+      rounds,
+      sessions,
+      firstTryAccuracy,
+      masteryAccuracy,
+      recoveryWins,
+      bySkill
+    };
+  }
+
+  const thisWeekSummary = summarizeBucket(thisWeekAttempts);
+  const prevWeekSummary = summarizeBucket(prevWeekAttempts);
+
+  const daily = thisWeek.map((day) => {
+    const rows = thisWeekAttempts.filter((item) => item.created_at >= day.startIso && item.created_at < day.endIso);
+    const firstAttempts = rows.filter((item) => getAttemptMeta(item.answer, activitySkillMap, item.activity_id).attemptNumber === 1);
+    const firstCorrect = firstAttempts.filter((item) => item.is_correct).length;
+    const firstTryAccuracy = firstAttempts.length > 0 ? Math.round((firstCorrect / firstAttempts.length) * 100) : 0;
+    return {
+      date: day.key,
+      rounds: firstAttempts.length,
+      firstTryAccuracy
+    };
+  });
+
+  const skillTrends = CT_SKILLS.map((skill) => {
+    const current = thisWeekSummary.bySkill.get(skill) ?? { attempts: 0, correct: 0 };
+    const previous = prevWeekSummary.bySkill.get(skill) ?? { attempts: 0, correct: 0 };
+    const currentAccuracy = current.attempts > 0 ? Math.round((current.correct / current.attempts) * 100) : 0;
+    const previousAccuracy = previous.attempts > 0 ? Math.round((previous.correct / previous.attempts) * 100) : 0;
+    return {
+      skill,
+      label: SKILL_LABELS[skill],
+      attempts: current.attempts,
+      accuracy: currentAccuracy,
+      deltaVsLastWeek: currentAccuracy - previousAccuracy
+    };
+  });
+
+  const skillsWithAttempts = skillTrends.filter((item) => item.attempts > 0);
+  const focusSkill =
+    [...(skillsWithAttempts.length > 0 ? skillsWithAttempts : skillTrends)].sort((a, b) => a.accuracy - b.accuracy)[0]?.skill ??
+    "interpret";
+  const strongestSkill =
+    [...(skillsWithAttempts.length > 0 ? skillsWithAttempts : skillTrends)].sort((a, b) => b.accuracy - a.accuracy)[0]?.skill ??
+    "interpret";
+
+  const wins: string[] = [];
+  if (thisWeekSummary.masteryAccuracy >= 75) wins.push(`Mastery accuracy ${thisWeekSummary.masteryAccuracy}% this week`);
+  if (thisWeekSummary.recoveryWins >= 2) wins.push(`Strategy recoveries: ${thisWeekSummary.recoveryWins}`);
+  if ((streakRow as { current_streak?: number } | null)?.current_streak) {
+    wins.push(`Current streak: ${(streakRow as { current_streak?: number }).current_streak ?? 0} days`);
+  }
+  if (wins.length === 0) wins.push("Consistency is building. Keep short daily sessions.");
+
+  const coachNotes = [
+    `Celebrate ${SKILL_LABELS[strongestSkill]}: this was the strongest track this week.`,
+    `Focus next on ${SKILL_LABELS[focusSkill]} with two targeted rounds each day.`,
+    `Aim for one recovery win each session by using the hint then retrying with evidence.`
+  ];
+
+  return {
+    childId,
+    range: {
+      from: thisWeek[0]?.key ?? getDayRange(now).key,
+      to: thisWeek[thisWeek.length - 1]?.key ?? getDayRange(now).key
+    },
+    roundsThisWeek: thisWeekSummary.rounds,
+    sessionsThisWeek: thisWeekSummary.sessions,
+    firstTryAccuracy: thisWeekSummary.firstTryAccuracy,
+    masteryAccuracy: thisWeekSummary.masteryAccuracy,
+    strategyRecoveries: thisWeekSummary.recoveryWins,
+    streak: (streakRow as { current_streak?: number } | null)?.current_streak ?? 0,
+    daily,
+    skillTrends,
+    wins,
+    focusSkill,
+    coachNotes
   };
 }
 

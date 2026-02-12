@@ -6,10 +6,12 @@ import { generateFeedback, type FeedbackOutput } from "@/lib/feedback";
 import {
   finalizeAdaptiveRound,
   getChildAdaptiveSettings,
+  getDailyQuestState,
   getNextAdaptiveRound,
   listChildrenForCurrentParent,
   logAttemptResponse,
   type AdaptiveRound,
+  type DailyQuestState,
   type SessionStep
 } from "@/lib/data";
 import { SKILL_LABELS, type CtSkill } from "@/lib/skills";
@@ -22,18 +24,28 @@ type SessionStats = {
   xp: number;
   strategyXp: number;
   correct: number;
+  firstTryCorrect: number;
+  recoveries: number;
+  hintsUsed: number;
+  streak: number;
   rounds: number;
   badges: string[];
   levelUps: Array<{ skill: CtSkill; level: number }>;
+  bySkill: Partial<Record<CtSkill, { attempts: number; correct: number }>>;
 };
 
 const EMPTY_STATS: SessionStats = {
   xp: 0,
   strategyXp: 0,
   correct: 0,
+  firstTryCorrect: 0,
+  recoveries: 0,
+  hintsUsed: 0,
+  streak: 0,
   rounds: 0,
   badges: [],
-  levelUps: []
+  levelUps: [],
+  bySkill: {}
 };
 
 export default function PlayPage() {
@@ -44,6 +56,7 @@ export default function PlayPage() {
   const [activeChild, setActiveChild] = useState<ChildProfile | null>(null);
   const [status, setStatus] = useState("Loading...");
   const [adaptiveSettings, setAdaptiveSettings] = useState<ChildAdaptiveSettings | null>(null);
+  const [dailyQuest, setDailyQuest] = useState<DailyQuestState | null>(null);
 
   const [sessionIndex, setSessionIndex] = useState(0);
   const [usedActivityIds, setUsedActivityIds] = useState<string[]>([]);
@@ -125,6 +138,25 @@ export default function PlayPage() {
       mounted = false;
     };
   }, [activeChild]);
+
+  useEffect(() => {
+    let mounted = true;
+    async function loadDailyQuest() {
+      if (!activeChild) return;
+      try {
+        const quest = await getDailyQuestState(activeChild.id, adaptiveSettings ?? undefined);
+        if (!mounted) return;
+        setDailyQuest(quest);
+      } catch {
+        if (!mounted) return;
+        setDailyQuest(null);
+      }
+    }
+    loadDailyQuest();
+    return () => {
+      mounted = false;
+    };
+  }, [activeChild, adaptiveSettings]);
 
   useEffect(() => {
     let mounted = true;
@@ -254,9 +286,20 @@ export default function PlayPage() {
     setRoundFinalized(true);
 
     setStats((prev) => ({
+      bySkill: {
+        ...prev.bySkill,
+        [round.plan.skill]: {
+          attempts: (prev.bySkill[round.plan.skill]?.attempts ?? 0) + 1,
+          correct: (prev.bySkill[round.plan.skill]?.correct ?? 0) + (isCorrect ? 1 : 0)
+        }
+      },
       xp: prev.xp + finalized.xpAwarded,
       strategyXp: prev.strategyXp + finalized.strategyXp,
       correct: prev.correct + (isCorrect ? 1 : 0),
+      firstTryCorrect: prev.firstTryCorrect + (isCorrect && attemptNumber === 1 ? 1 : 0),
+      recoveries: prev.recoveries + (isCorrect && attemptNumber === 2 ? 1 : 0),
+      hintsUsed: prev.hintsUsed + (attemptNumber === 2 || usedHint ? 1 : 0),
+      streak: finalized.streak,
       rounds: prev.rounds + 1,
       badges: [...prev.badges, ...finalized.newBadges],
       levelUps: finalized.leveledUp ? [...prev.levelUps, { skill: round.plan.skill, level: finalized.newLevel }] : prev.levelUps
@@ -269,6 +312,12 @@ export default function PlayPage() {
     if (celebrationParts.length === 0) celebrationParts.push(`+${finalized.xpAwarded} XP earned.`);
 
     setCelebration(celebrationParts.join(" "));
+    try {
+      const refreshedQuest = await getDailyQuestState(activeChild.id, adaptiveSettings ?? undefined);
+      setDailyQuest(refreshedQuest);
+    } catch {
+      setDailyQuest(null);
+    }
   };
 
   const advance = () => {
@@ -295,6 +344,28 @@ export default function PlayPage() {
     setStatus("Preparing adaptive challenge...");
   };
 
+  const sessionAccuracy = stats.rounds > 0 ? Math.round((stats.correct / stats.rounds) * 100) : 0;
+  const sessionFirstTryRate = stats.rounds > 0 ? Math.round((stats.firstTryCorrect / stats.rounds) * 100) : 0;
+  const skillEntries = Object.entries(stats.bySkill) as Array<[CtSkill, { attempts: number; correct: number }]>;
+  const strongestSkill =
+    skillEntries.length > 0
+      ? [...skillEntries]
+          .sort((a, b) => {
+            const aAcc = a[1].attempts > 0 ? a[1].correct / a[1].attempts : 0;
+            const bAcc = b[1].attempts > 0 ? b[1].correct / b[1].attempts : 0;
+            return bAcc - aAcc;
+          })[0]?.[0]
+      : null;
+  const focusSkill =
+    skillEntries.length > 0
+      ? [...skillEntries]
+          .sort((a, b) => {
+            const aAcc = a[1].attempts > 0 ? a[1].correct / a[1].attempts : 0;
+            const bAcc = b[1].attempts > 0 ? b[1].correct / b[1].attempts : 0;
+            return aAcc - bAcc;
+          })[0]?.[0]
+      : null;
+
   if (status) {
     return (
       <section className="rounded-2xl bg-white/85 p-4">
@@ -310,9 +381,41 @@ export default function PlayPage() {
 
   if (!activeChild) return null;
 
+  const questProgress = dailyQuest?.progressPercent ?? 0;
+  const questMainTarget = 2;
+
   if (currentStep === "recap") {
     return (
       <section className="space-y-4">
+        {dailyQuest && (
+          <article className="rounded-2xl bg-white/90 p-4 shadow-sm">
+            <div className="flex items-center justify-between">
+              <p className="text-xs font-bold uppercase tracking-wide text-leaf">Daily Quest</p>
+              <p className="text-xs font-semibold text-ink/70">
+                {dailyQuest.roundsToday}/{dailyQuest.dailyGoal} rounds
+              </p>
+            </div>
+            <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-slate-100">
+              <div className="h-2 rounded-full bg-gradient-to-r from-leaf to-emerald-400" style={{ width: `${questProgress}%` }} />
+            </div>
+            <div className="mt-3 grid grid-cols-3 gap-2 text-center text-xs font-semibold">
+              <div className={`rounded-xl px-2 py-2 ${dailyQuest.completed.warmup ? "bg-emerald-100 text-emerald-900" : "bg-slate-100 text-slate-600"}`}>
+                Warmup
+              </div>
+              <div
+                className={`rounded-xl px-2 py-2 ${
+                  dailyQuest.completed.mainCount >= questMainTarget ? "bg-emerald-100 text-emerald-900" : "bg-slate-100 text-slate-600"
+                }`}
+              >
+                Main {Math.min(dailyQuest.completed.mainCount, questMainTarget)}/{questMainTarget}
+              </div>
+              <div className={`rounded-xl px-2 py-2 ${dailyQuest.completed.boss ? "bg-emerald-100 text-emerald-900" : "bg-slate-100 text-slate-600"}`}>
+                Boss
+              </div>
+            </div>
+          </article>
+        )}
+
         <article className="rounded-3xl bg-white/90 p-5 shadow-sm">
           <p className="text-xs font-bold uppercase tracking-wide text-leaf">Session Recap</p>
           <h2 className="mt-2 text-2xl font-black text-ink">Great session, {activeChild.name}</h2>
@@ -334,6 +437,32 @@ export default function PlayPage() {
               <p className="text-2xl font-black text-ink">{stats.strategyXp}</p>
             </div>
           </div>
+
+          <div className="mt-4 grid grid-cols-2 gap-3 text-center">
+            <div className="rounded-2xl bg-mint p-3">
+              <p className="text-xs font-semibold uppercase text-ink/70">Session Accuracy</p>
+              <p className="text-2xl font-black text-leaf">{sessionAccuracy}%</p>
+            </div>
+            <div className="rounded-2xl bg-mint p-3">
+              <p className="text-xs font-semibold uppercase text-ink/70">First-Try</p>
+              <p className="text-2xl font-black text-leaf">{sessionFirstTryRate}%</p>
+            </div>
+            <div className="rounded-2xl bg-clay p-3">
+              <p className="text-xs font-semibold uppercase text-ink/70">Recoveries</p>
+              <p className="text-2xl font-black text-ink">{stats.recoveries}</p>
+            </div>
+            <div className="rounded-2xl bg-clay p-3">
+              <p className="text-xs font-semibold uppercase text-ink/70">Streak</p>
+              <p className="text-2xl font-black text-ink">{stats.streak}</p>
+            </div>
+          </div>
+
+          {(strongestSkill || focusSkill) && (
+            <div className="mt-4 rounded-2xl bg-indigo-50 p-3 text-sm font-semibold text-indigo-900">
+              {strongestSkill && <p>Strongest today: {SKILL_LABELS[strongestSkill]}</p>}
+              {focusSkill && <p>Focus next: {SKILL_LABELS[focusSkill]}</p>}
+            </div>
+          )}
 
           {stats.levelUps.length > 0 && (
             <div className="mt-4 rounded-2xl bg-emerald-100 p-3 text-sm font-semibold text-emerald-900 animate-level-pop">
@@ -385,6 +514,36 @@ export default function PlayPage() {
 
   return (
     <section className="space-y-4">
+      {dailyQuest && (
+        <article className="rounded-2xl bg-white/90 p-4 shadow-sm">
+          <div className="flex items-center justify-between">
+            <p className="text-xs font-bold uppercase tracking-wide text-leaf">Daily Quest</p>
+            <p className="text-xs font-semibold text-ink/70">
+              {dailyQuest.roundsToday}/{dailyQuest.dailyGoal} rounds today
+            </p>
+          </div>
+          <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-slate-100">
+            <div className="h-2 rounded-full bg-gradient-to-r from-leaf to-emerald-400 transition-all duration-700" style={{ width: `${questProgress}%` }} />
+          </div>
+          <div className="mt-2 flex flex-wrap gap-2 text-xs font-semibold">
+            <span className={`rounded-full px-2 py-1 ${dailyQuest.completed.warmup ? "bg-emerald-100 text-emerald-900" : "bg-slate-100 text-slate-600"}`}>
+              Warmup
+            </span>
+            <span
+              className={`rounded-full px-2 py-1 ${
+                dailyQuest.completed.mainCount >= questMainTarget ? "bg-emerald-100 text-emerald-900" : "bg-slate-100 text-slate-600"
+              }`}
+            >
+              Main {Math.min(dailyQuest.completed.mainCount, questMainTarget)}/{questMainTarget}
+            </span>
+            <span className={`rounded-full px-2 py-1 ${dailyQuest.completed.boss ? "bg-emerald-100 text-emerald-900" : "bg-slate-100 text-slate-600"}`}>
+              Boss
+            </span>
+            {dailyQuest.dueReviews > 0 && <span className="rounded-full bg-amber-100 px-2 py-1 text-amber-900">Due reviews {dailyQuest.dueReviews}</span>}
+          </div>
+        </article>
+      )}
+
       <article className="rounded-3xl bg-white/90 p-5 shadow-sm">
         <div className="flex flex-wrap items-center gap-2">
           <span className="rounded-full bg-ink px-3 py-1 text-xs font-bold text-white">{String(currentStep).toUpperCase()}</span>
